@@ -1,0 +1,114 @@
+/* process.css */
+.process {
+  padding: 100px 48px;
+  background-color: var(--bg);
+  scroll-margin-top: 80px;
+}
+
+.process-eyebrow {
+  font-family: "Poppins";
+  font-size: 12px;
+  letter-spacing: 0.15em;
+  color: var(--accent);
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+.process-heading {
+  font-family: "Playfair Display", serif;
+  font-size: clamp(1.8rem, 4vw, 2.8rem);
+  color: var(--dark-bg);
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.process-list {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.process-step {
+  display: flex;
+  gap: 28px;
+
+  /* Starting state for reveal */
+  opacity: 0;
+  transform: translateX(-24px);
+  transition:
+    opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1),
+    transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.process-step.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.step-marker {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.step-number {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 1px solid var(--accent);
+  color: var(--accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins";
+  font-size: 14px;
+  font-weight: 600;
+  background-color: var(--bg);
+  z-index: 1;
+}
+
+.step-line {
+  width: 1px;
+  flex: 1;
+  min-height: 60px;
+  background-color: var(--border);
+  margin: 4px 0;
+
+  /* Line draws downward as the step becomes visible */
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: transform 0.6s ease 0.2s;
+}
+
+.process-step.visible .step-line {
+  transform: scaleY(1);
+}
+
+.step-content {
+  padding-top: 8px;
+  padding-bottom: 40px;
+}
+
+.step-title {
+  font-family: "Playfair Display", serif;
+  font-size: 22px;
+  color: var(--accent);
+  margin-bottom: 8px;
+}
+
+.step-desc {
+  font-family: "Poppins";
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--text-light);
+  max-width: 440px;
+}
+
+@media (max-width: 600px) {
+  .process {
+    padding: 70px 24px;
+  }
+  .step-desc {
+    max-width: 100%;
+  }
+}

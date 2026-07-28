@@ -1,0 +1,27 @@
+.whole {
+  height: 100vh;
+  background-color: var(--bg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.whole h1 {
+  font-family: "Playfair Display";
+  font-size: 70px;
+  color: var(--accent);
+  text-shadow: 1px 1px 1px var(--dark-bg);
+}
+.whole p {
+  color: var(--text);
+  font-family: "Poppins";
+  font-size: small;
+}
+.whole button {
+  background-color: var(--dark-bg) !important;
+  border: none !important;
+  margin: 20px !important;
+  font-family: "Poppins";
+  font-size: 13px !important;
+}

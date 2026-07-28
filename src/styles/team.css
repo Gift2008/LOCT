@@ -1,0 +1,178 @@
+.team-page {
+  padding: 100px 24px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.team-eyebrow {
+  font-family: "Poppins";
+  font-size: 12px;
+  letter-spacing: 0.15em;
+  color: var(--accent);
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+/* Founder rows — full width, alternating image side */
+.founder-row {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  gap: 48px;
+  align-items: center;
+  margin-bottom: 80px;
+
+  opacity: 0;
+  transform: translateY(30px);
+  transition:
+    opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1),
+    transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.founder-row.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Cofounder row: image on the right, text on left */
+.founder-row.image-right {
+  grid-template-columns: 1.4fr 1fr;
+}
+
+.founder-row.image-right .founder-image {
+  order: 2;
+}
+
+.founder-row.image-right .founder-info {
+  order: 1;
+}
+
+.founder-image {
+  width: 100%;
+  aspect-ratio: 1;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Playfair Display", serif;
+  font-size: 3rem;
+  color: #fff;
+}
+
+.founder-name {
+  font-family: "Playfair Display", serif;
+  font-size: clamp(1.6rem, 3vw, 2.2rem);
+  color: var(--text);
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.founder-role {
+  font-family: "Poppins";
+  font-size: 14px;
+  color: var(--accent);
+  margin-bottom: 16px;
+}
+
+.founder-bio {
+  font-family: "Poppins";
+  font-size: 15px;
+  line-height: 1.7;
+  color: var(--text-light);
+}
+
+/* Meet our team grid — same card style as before */
+.team-grid-section {
+  text-align: center;
+  border-top: 1px solid var(--border);
+  padding-top: 70px;
+}
+
+.team-heading {
+  font-family: "Playfair Display", serif;
+  font-size: clamp(1.8rem, 4vw, 2.6rem);
+  color: var(--text);
+  margin-bottom: 50px;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.team-card {
+  background-color: #fff;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 32px 24px;
+  box-shadow: 0 1px 3px var(--shadow);
+
+  opacity: 0;
+  transform: translateY(24px);
+  transition:
+    opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1),
+    transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.team-card.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.team-avatar {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Playfair Display", serif;
+  font-size: 22px;
+  color: #fff;
+  margin: 0 auto 18px;
+}
+
+.team-name {
+  font-family: "Playfair Display", serif;
+  font-size: 1.2rem;
+  color: var(--text);
+  margin-bottom: 4px;
+}
+
+.team-role {
+  font-family: "Poppins";
+  font-size: 13px;
+  color: var(--accent);
+  margin-bottom: 14px;
+}
+
+.team-bio {
+  font-family: "Poppins";
+  font-size: 13px;
+  color: var(--text-light);
+  line-height: 1.6;
+}
+
+@media (max-width: 700px) {
+  .team-page {
+    padding: 70px 20px;
+  }
+  .founder-row,
+  .founder-row.image-right {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  .founder-row.image-right .founder-image,
+  .founder-row.image-right .founder-info {
+    order: unset;
+  }
+  .founder-image {
+    max-width: 200px;
+    margin: 0 auto;
+  }
+  .team-grid {
+    grid-template-columns: 1fr;
+  }
+}

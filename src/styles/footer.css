@@ -1,0 +1,28 @@
+.up {
+  text-align: center;
+  background-color: var(--bg);
+  padding: 20px;
+  color: var(--dark-bg);
+  font-family: "Poppins";
+}
+.up p {
+  font-weight: 700;
+  margin-bottom: 1px;
+}
+.up span {
+  opacity: 1;
+  color: var(--text-light);
+  font-size: 14px;
+  margin-top: auto;
+}
+.up span a {
+  text-decoration: none;
+  color: var(--text-light);
+}
+.up span a:hover {
+  color: var(--accent);
+}
+
+.up small {
+  font-size: 12px;
+}

@@ -1,0 +1,93 @@
+.services {
+  padding: 100px 48px;
+  background-color: var(--dark-bg);
+  text-align: center;
+}
+
+.services-eyebrow {
+  font-family: "Poppins";
+  font-size: 12px;
+  letter-spacing: 0.15em;
+  color: var(--accent);
+  margin-bottom: 12px;
+}
+
+.services-heading {
+  font-family: "Playfair Display", serif;
+  font-size: clamp(1.8rem, 4vw, 2.8rem);
+  color: var(--bg);
+  margin-bottom: 60px;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  text-align: left;
+}
+
+.service-card {
+  background-color: #fff;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 32px 24px;
+  box-shadow: 0 1px 3px var(--shadow);
+
+  /* Starting state: hidden, offset upward slightly */
+  opacity: 0;
+  transform: translateY(30px);
+  transition:
+    opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1),
+    transform 0.7s cubic-bezier(0.22, 1, 0.36, 1),
+    border-color 0.4s ease,
+    box-shadow 0.4s ease;
+}
+
+.service-card.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.service-card:hover {
+  border-color: var(--accent);
+  box-shadow: 0 8px 20px var(--shadow);
+  transform: translateY(-6px);
+}
+
+.service-number {
+  font-family: "Poppins";
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--accent);
+  display: block;
+  margin-bottom: 16px;
+}
+
+.service-title {
+  font-family: "Playfair Display", serif;
+  font-size: 20px;
+  color: var(--text);
+  margin-bottom: 10px;
+}
+
+.service-desc {
+  font-family: "Poppins";
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--text-light);
+}
+
+@media (max-width: 1024px) {
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .services {
+    padding: 70px 24px;
+  }
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+}

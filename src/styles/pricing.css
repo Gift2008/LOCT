@@ -1,0 +1,349 @@
+/* pricing.css — uses your existing root tokens, no separate palette */
+
+.pricing {
+  padding: 100px 24px;
+  max-width: 1100px;
+  margin: 0 auto;
+  scroll-margin-top: 80px;
+}
+
+.pricing-hero {
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.pricing-eyebrow {
+  font-family: "Poppins";
+  font-size: 12px;
+  letter-spacing: 0.15em;
+  color: var(--accent);
+  margin-bottom: 12px;
+}
+
+.pricing-heading {
+  font-family: "Playfair Display", serif;
+  font-size: clamp(2rem, 5vw, 3.2rem);
+  color: var(--text);
+  margin-bottom: 16px;
+}
+
+.pricing-sub {
+  font-family: "Poppins";
+  font-size: 16px;
+  color: var(--text-light);
+  line-height: 1.6;
+  margin-bottom: 32px;
+}
+
+.pricing-hero-ctas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+/* Reuses the .cta-btn / .cta-text pattern from your Hero/Navbar */
+.pricing .cta-btn {
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 15px;
+  color: #fff;
+  background-color: var(--accent);
+  padding: 14px 28px;
+  border-radius: 6px;
+  text-decoration: none;
+  transition:
+    transform 0.4s cubic-bezier(0.22, 1, 0.36, 1),
+    background-color 0.4s ease;
+}
+
+.pricing .cta-btn:hover {
+  transform: translateY(-2px) scale(1.02);
+}
+
+.pricing .cta-text {
+  font-family: "Poppins";
+  font-size: 15px;
+  color: var(--text);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition:
+    border-color 0.3s ease,
+    color 0.3s ease;
+}
+
+.pricing .cta-text:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+
+/* Package cards — side by side desktop, stacked mobile */
+.pricing-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px;
+  margin-bottom: 80px;
+}
+
+.pricing-card {
+  position: relative;
+  background-color: #fff;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 36px 32px;
+  box-shadow: 0 1px 3px var(--shadow);
+
+  opacity: 0;
+  transform: translateY(30px);
+  transition:
+    opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1),
+    transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.pricing-card.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.pricing-card.highlighted {
+  border: 2px solid var(--accent);
+  box-shadow: 0 8px 30px var(--shadow);
+  transform: scale(1.02) translateY(30px);
+}
+
+.pricing-card.highlighted.visible {
+  transform: scale(1.02) translateY(0);
+}
+
+.pricing-badge {
+  position: absolute;
+  top: -14px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--accent);
+  color: #fff;
+  font-family: "Poppins";
+  font-size: 12px;
+  font-weight: 600;
+  padding: 5px 16px;
+  border-radius: 20px;
+}
+
+.pricing-tier {
+  font-family: "Poppins";
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: var(--accent);
+  margin-bottom: 12px;
+}
+
+.pricing-price {
+  font-family: "Playfair Display", serif;
+  font-size: 2.4rem;
+  color: var(--text);
+  margin-bottom: 8px;
+}
+
+.pricing-price span {
+  font-size: 15px;
+  font-family: "Poppins";
+  color: var(--text-light);
+  font-weight: 400;
+}
+
+.pricing-tagline {
+  font-family: "Poppins";
+  font-size: 14px;
+  color: var(--text-light);
+  margin-bottom: 24px;
+}
+
+.pricing-features {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 24px;
+}
+
+.pricing-features li {
+  font-family: "Poppins";
+  font-size: 14px;
+  color: var(--text);
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  margin-bottom: 12px;
+  line-height: 1.5;
+}
+
+.check {
+  color: #16a34a; /* kept green intentionally — universal "included" signal */
+  font-weight: 700;
+}
+
+.pricing-result {
+  font-family: "Poppins";
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 24px;
+}
+
+.pricing-btn {
+  display: block;
+  text-align: center;
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 15px;
+  color: #fff;
+  background-color: var(--dark-bg);
+  padding: 13px;
+  border-radius: 6px;
+  text-decoration: none;
+  transition:
+    background-color 0.3s ease,
+    transform 0.3s ease;
+}
+
+.pricing-card.highlighted .pricing-btn {
+  background-color: var(--accent);
+}
+
+.pricing-btn:hover {
+  transform: translateY(-2px);
+}
+
+/* Comparison table */
+.comparison-wrap {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.comparison-heading {
+  font-family: "Playfair Display", serif;
+  font-size: 1.8rem;
+  color: var(--text);
+  margin-bottom: 32px;
+}
+
+.comparison-scroll {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin-bottom: 20px;
+}
+
+.comparison-table {
+  width: 100%;
+  min-width: 480px;
+  border-collapse: collapse;
+  font-family: "Poppins";
+  font-size: 14px;
+}
+
+.comparison-table th,
+.comparison-table td {
+  padding: 14px 16px;
+  border-bottom: 1px solid var(--border);
+  text-align: center;
+}
+
+.comparison-table th:first-child,
+.comparison-table td:first-child {
+  text-align: left;
+  font-weight: 600;
+}
+
+.comparison-table thead th {
+  color: var(--text);
+  font-weight: 700;
+}
+
+.comparison-cta {
+  font-family: "Poppins";
+  font-size: 14px;
+  color: var(--accent);
+  text-decoration: underline;
+}
+
+/* FAQ */
+.pricing-faq {
+  max-width: 700px;
+  margin: 0 auto 80px;
+}
+
+.faq-heading {
+  font-family: "Playfair Display", serif;
+  font-size: 1.8rem;
+  color: var(--text);
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.faq-item {
+  border-bottom: 1px solid var(--border);
+  padding: 16px 0;
+}
+
+.faq-item summary {
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 15px;
+  color: var(--text);
+  cursor: pointer;
+}
+
+.faq-item p {
+  font-family: "Poppins";
+  font-size: 14px;
+  color: var(--text-light);
+  margin-top: 10px;
+  line-height: 1.6;
+}
+
+/* Final CTA */
+.pricing-final-cta {
+  text-align: center;
+  background-color: var(--dark-bg);
+  color: #fff;
+  padding: 60px 32px;
+  border-radius: 16px;
+}
+
+.pricing-final-cta h2 {
+  font-family: "Playfair Display", serif;
+  font-size: clamp(1.6rem, 4vw, 2.2rem);
+  margin-bottom: 16px;
+}
+
+.pricing-final-cta p {
+  font-family: "Poppins";
+  font-size: 15px;
+  opacity: 0.85;
+  margin-bottom: 24px;
+}
+
+.pricing-final-cta .cta-btn {
+  display: inline-block;
+}
+
+.final-cta-sub {
+  font-size: 13px !important;
+  margin-top: 12px;
+}
+
+@media (max-width: 768px) {
+  .pricing-grid {
+    grid-template-columns: 1fr;
+  }
+  .pricing-card.highlighted,
+  .pricing-card.highlighted.visible {
+    transform: translateY(30px);
+  }
+  .pricing-card.highlighted.visible {
+    transform: translateY(0);
+  }
+  .pricing {
+    padding: 70px 20px;
+  }
+}

@@ -1,0 +1,144 @@
+/* The container */
+.nav-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+  height: 70px;
+  background-color: var(--bg);
+  /* color: var(--dark-bg); */
+  width: 100%;
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  box-shadow: 2px 2px 10px var(--shadow);
+  border-bottom: 1px solid white;
+}
+
+/* logo */
+.logo a {
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 22px;
+}
+
+.logo a p .l {
+  color: var(--dark-bg);
+}
+.logo a p .orange {
+  color: var(--accent);
+}
+.logo a p .t {
+  font-weight: lighter;
+  font-size: small;
+  color: grey;
+}
+/* The links */
+.navigation a {
+  font-family: "Poppins";
+  font-size: 15px;
+  text-decoration: none;
+  margin-right: 16px;
+  color: var(--dark-bg);
+  transition: 1s;
+}
+.navigation a:hover {
+  color: var(--dark-bg);
+  transition: 1s;
+  font-size: large;
+}
+
+/* The button */
+.btn {
+  background-color: var(--accent) !important;
+  border: 1px solid var(--accent) !important;
+  font-size: 15px !important;
+  margin-left: 20px;
+  transition-property: background-color;
+  transition: 0.6s !important;
+}
+.btn:hover {
+  transform: scale(1.1) !important;
+  transition: 0.6s !important;
+  background-color: var(--accent) !important;
+}
+
+/* Hamburger button — hidden by default (desktop) */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 6px;
+  z-index: 20;
+}
+.menu-toggle span {
+  width: 26px;
+  height: 2px;
+  background: var(--dark-bg);
+  transition:
+    transform 0.3s ease,
+    opacity 0.3s ease;
+}
+.menu-toggle.open span:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+.menu-toggle.open span:nth-child(2) {
+  opacity: 0;
+}
+.menu-toggle.open span:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+/* ===== Media query ===== */
+@media (max-width: 768px) {
+  .nav-container {
+    justify-content: space-between;
+    padding: 10px 20px;
+  }
+
+  .menu-toggle {
+    display: flex;
+  }
+
+  .navigation {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background-color: var(--dark-bg);
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 18px;
+    padding: 0 24px;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition:
+      max-height 0.4s ease,
+      opacity 0.3s ease,
+      padding 0.4s ease;
+  }
+
+  .navigation.open {
+    max-height: 400px;
+    opacity: 1;
+    padding: 20px 24px;
+    z-index: 99;
+  }
+
+  .navigation a {
+    margin-right: 0;
+    display: block;
+    margin: 15px;
+    color: var(--bg);
+  }
+
+  .btn {
+    margin-left: 0 !important;
+  }
+}

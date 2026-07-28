@@ -1,0 +1,128 @@
+.hero-image {
+  width: 100%;
+  padding: 10px;
+  --hero-h: 85vh;
+}
+
+.hro {
+  position: relative;
+}
+
+.hro img {
+  width: 100%;
+  height: var(--hero-h);
+  object-fit: cover;
+  border-radius: 10px;
+  display: block;
+}
+
+.overlay {
+  background-color: var(--dark-bg);
+  opacity: 0.35;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: var(--hero-h);
+  border-radius: 10px;
+}
+
+.continue {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: var(--hero-h);
+  padding: 10px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 16px;
+}
+
+.headline {
+  font-size: clamp(2.2rem, 6vw, 5rem);
+  font-weight: 600;
+  color: white;
+  font-family: "Playfair Display", serif;
+  line-height: 1.1;
+}
+
+.subhead {
+  font-size: 15px;
+  font-family: "Poppins", sans-serif;
+  line-height: 1.5;
+  color: var(--border);
+  max-width: 520px;
+}
+
+.s {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-top: 8px;
+}
+
+.cta-btn {
+  font-size: 15px;
+  text-decoration: none;
+  color: #e6e3e3;
+  font-family: "Poppins", sans-serif;
+  background: var(--accent);
+  padding: 12px 22px;
+  border-radius: 4px;
+  transition:
+    transform 0.4s cubic-bezier(0.22, 1, 0.36, 1),
+    background-color 0.4s ease;
+}
+
+.cta-btn:hover {
+  transform: translateY(-2px) scale(1.03);
+}
+
+.cta-text {
+  font-size: 15px;
+  color: white;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.cta-text:hover {
+  color: var(--accent);
+  transform: translateX(20%);
+}
+
+/* Staggered fall-into-place */
+.reveal-drop {
+  opacity: 0;
+  transform: translateY(-40px);
+  animation: dropIn 0.9s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+@keyframes dropIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-40px);
+  }
+  60% {
+    opacity: 1;
+    transform: translateY(6px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 600px) {
+  .continue {
+    padding: 10px 20px;
+  }
+  .s {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+  .subhead {
+    font-size: 10px;
+  }
+}
