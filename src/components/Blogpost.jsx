@@ -1,7 +1,7 @@
 import React from "react";
 import { useParams, Link, Navigate } from "react-router-dom";
 import "../styles/blogpost.css";
-import { posts } from "../data/blogPosts";
+import { posts } from "../data/blogposts";
 
 const CALENDLY_URL = "https://calendly.com/hello-lines-of-code/15min";
 const WHATSAPP_URL = "https://wa.me/+2348078018504";
