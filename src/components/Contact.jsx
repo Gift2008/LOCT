@@ -64,7 +64,9 @@ function Contact() {
 
         <div className="contact-detail">
           <span className="detail-label">Address</span>
-          <span>Your Street Address, Lagos, Nigeria</span>
+          <span>
+            3 Fasheun Close, Off Americana Crest, Ijayi, Lagos, Nigeria.
+          </span>
         </div>
         <div className="contact-detail">
           <span className="detail-label">Phone</span>

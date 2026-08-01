@@ -22,7 +22,7 @@ function Hero() {
             <br />
             <span>
               Lines of Code Technologies builds high-performance websites and
-              practical AI tools that help growing businesses scale. based
+              practical AI tools that help growing businesses scale.
             </span>
           </p>
           <div className="s reveal-drop" style={{ animationDelay: "0.5s" }}>

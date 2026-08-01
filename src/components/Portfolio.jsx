@@ -4,6 +4,8 @@ import "../styles/portfolio.css";
 import useReveal from "./Hooks/useReveal";
 import { Link } from "react-router-dom";
 import project1 from "../assets/BOW.png";
+import project2 from "../assets/powa.jpeg";
+import project3 from "../assets/vic.jpeg";
 const projects = [
   {
     title: "Beauty On Wheels",
@@ -12,34 +14,16 @@ const projects = [
     link: "https://beautyonwheels.com.ng",
   },
   {
-    title: "Northgate Realty",
+    title: "Frankey Powa",
     category: "Development",
-    color: "linear-gradient(135deg, #24344d, #4a6fa5)",
+    image: project2,
     link: "index.html",
   },
   {
-    title: "Marlow & Co.",
-    category: "Upgrades",
-    image: "linear-gradient(135deg, #3c3c3c, #7a7a7a)",
-    link: "index.html",
-  },
-  {
-    title: "Verde Botanicals",
+    title: "Designs By Vic",
     category: "Web Design",
-    image: "linear-gradient(135deg, #4a7c59, #a3c9a8)",
-    link: "index.html",
-  },
-  {
-    title: "Ridgeline Fitness",
-    category: "Development",
-    image: "linear-gradient(135deg, #7b2d26, #c65d3b)",
-    link: "index.html",
-  },
-  {
-    title: "Auric Studio",
-    category: "Upgrades",
-    image: "linear-gradient(135deg, #1f1f1f, #a98c4a)",
-    link: "index.html",
+    image: project3,
+    link: "https://www.figma.com/proto/DazIdZtT2UxCWUXLJTy5mx/PORTFOLIO-WEBSITE?node-id=80-321&t=B6yC6SwEQ2hrlOaP-1",
   },
 ];
 

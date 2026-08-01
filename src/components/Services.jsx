@@ -5,8 +5,8 @@ import useReveal from "./Hooks/useReveal";
 const services = [
   {
     number: "01",
-    title: "Web Design",
-    desc: "Custom Figma designs built around your brand — not a template with your logo dropped in.",
+    title: "AI Integration",
+    desc: "Integrating AI's that works just for you. Increasing sales and site visits.",
   },
   {
     number: "02",
@@ -25,8 +25,8 @@ const services = [
   },
   {
     number: "05",
-    title: "AI Integration",
-    desc: "Integrating AI's that works just for you. Increasing sales and site visits.",
+    title: "Web Design",
+    desc: "Custom Figma designs built around your brand — not a template with your logo dropped in.",
   },
 ];
 
