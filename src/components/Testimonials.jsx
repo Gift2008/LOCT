@@ -18,9 +18,9 @@ const testimonials = [
   },
   {
     quote:
-      "They didn't just design something pretty — they asked the right questions about our business first. That showed in the final result.",
-    name: "Priya Nair",
-    role: "Director, Northgate Realty",
+      "Working with Lines of Code Technologies was seamless. They took our vision and turned it into a modern, responsive website for Frankey Powa Technologies. Great communication, great design, great results. LOCT is the team to call when you need your business online the right way",
+    role: "CEO, Frankey Powa Technologies",
+    name: "Franklin Mbilitem",
   },
 ];
 

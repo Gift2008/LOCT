@@ -64,7 +64,7 @@ function Portfolio() {
       <p className="portfolio-eyebrow">OUR WORK</p>
       <h2 className="portfolio-heading">Sites we've brought to life</h2>
 
-      <div className="portfolio-filters">
+      {/* <div className="portfolio-filters">
         {filters.map((f) => (
           <button
             key={f}
@@ -74,7 +74,7 @@ function Portfolio() {
             {f}
           </button>
         ))}
-      </div>
+      </div> */}
 
       <div className="portfolio-grid">
         {filtered.map((p, i) => (

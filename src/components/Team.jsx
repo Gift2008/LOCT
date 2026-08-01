@@ -5,7 +5,7 @@ import f1 from "../assets/am.png";
 import f2 from "../assets/g.jpg";
 
 const founder = {
-  name: "Austin Mbilitem",
+  name: "Austine Mbilitem",
   role: "Founder",
   initials: "AM",
   image: f1,

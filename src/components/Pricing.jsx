@@ -5,58 +5,180 @@ import useReveal from "./Hooks/useReveal";
 import useTitles from "./Hooks/useTitles";
 
 const growthFeatures = [
-  "Professional Website - 1 page, mobile responsive",
-  "4 Social Media Posts per week - Content + Design",
-  "Tidio WhatsApp Chat Setup - 24/7 receptionist for your site",
-  "Basic SEO - So Google can find you",
-  "Monthly Report - What worked, what to improve",
+  {
+    category: "High-Converting Website",
+    items: [
+      "Landing Page + Contact Funnel",
+      "Built to turn visitors into leads",
+      "Clean, fast, mobile-optimized",
+    ],
+  },
+  {
+    category: "Quality Ads",
+    items: [
+      "14 Days Facebook + Google Ads Setup",
+      "5 Lead Target",
+      "Proven to drive 220%+ ad performance growth",
+    ],
+  },
+  {
+    category: "Simple Conversion Path",
+    items: [
+      "Visitor → Lead, no wasted clicks",
+      "Every step designed to book you calls",
+      "No complexity, no clutter — just results",
+    ],
+  },
+  {
+    category: "Fast Delivery",
+    items: [
+      "Delivered in 10 Days",
+      "+₦50,000/month maintenance (optional)",
+      "Support included from day one",
+    ],
+  },
 ];
 
 const dominanceFeatures = [
-  "Everything in GROWTH, plus:",
-  "Facebook & Instagram Ads Management - Up to ₦100,000 ad spend",
-  "SEO + Blog - Rank on Google and get free traffic",
-  "8 Social Media Posts per week - Reels, Carousels, Graphics",
-  "Weekly Strategy Call - 30min with our Growth Strategist",
-  "Priority Support - WhatsApp replies within 2 hours",
+  {
+    category: "Quality Website",
+    items: [
+      "SEO + Blog + Lead Funnels",
+      "Paystack + WhatsApp + Mobile optimized",
+      "Built to convert visitors to customers",
+    ],
+  },
+  {
+    category: "Quality AI",
+    items: [
+      "Advanced AI that books appointments",
+      "Auto follow-up 24/7 — zero missed leads",
+      "Trained on your business + Multilingual",
+    ],
+  },
+  {
+    category: "Quality Ads",
+    items: [
+      "30 Days Facebook + Google Ads Setup",
+      "10 Lead Target",
+      "Ad copy + targeting + management",
+    ],
+  },
+  {
+    category: "Quality Support",
+    items: [
+      "Delivered in 14 Days",
+      "90 Days Support + Training",
+      "Domain + Hosting + SSL included",
+    ],
+  },
+];
+
+const empireFeatures = [
+  {
+    category: "Enterprise Website + Systems",
+    items: [
+      "Custom CRM + Inventory + Staff Portal",
+      "Advanced API Integration + Database Architecture",
+      "Enterprise Security + Cloud Hosting + Backup",
+      "Built to scale to 1M+ users",
+    ],
+  },
+  {
+    category: "Empire AI + Automation",
+    items: [
+      "Advanced AI Chatbot trained on YOUR business",
+      "Auto booking, follow-up, support 24/7",
+      "Multilingual + Voice + WhatsApp Integration",
+      "Lead qualification + Sales automation",
+    ],
+  },
+  {
+    category: "Enterprise Marketing",
+    items: [
+      "90 Days Facebook + Google Ads Management",
+      "50 Lead Target",
+      "SEO + Content Strategy + Email Automation",
+      "Full Analytics + Conversion Tracking",
+    ],
+  },
+  {
+    category: "Elite Support",
+    items: [
+      "Delivered in 30 Days",
+      "1 Year Priority Support + Maintenance",
+      "Team Training + Dedicated Project Manager",
+      "Domain, Enterprise Hosting, SSL, Security included",
+    ],
+  },
 ];
 
 const comparisonRows = [
-  { feature: "Website", growth: "1 Page", dominance: "3-5 Pages + Blog" },
-  { feature: "SEO", growth: "Basic", dominance: "Advanced + Blog" },
-  { feature: "Social Media Posts", growth: "4 / week", dominance: "8 / week" },
-  { feature: "Ads Management", growth: "—", dominance: "Up to ₦100k spend" },
-  { feature: "Tidio Chat Setup", growth: "✓", dominance: "✓" },
-  { feature: "Monthly Report", growth: "✓", dominance: "✓" },
-  { feature: "Weekly Strategy Call", growth: "—", dominance: "✓" },
-  { feature: "Support", growth: "Email", dominance: "WhatsApp + Call" },
+  {
+    feature: "Starting Price",
+    growth: "₦650,000",
+    dominance: "₦950,000",
+    empire: "₦2,500,000",
+  },
+  {
+    feature: "Website",
+    growth: "Landing Page + Funnel",
+    dominance: "Full Site + SEO + Blog",
+    empire: "Enterprise + Custom Systems",
+  },
+  {
+    feature: "AI / Automation",
+    growth: "—",
+    dominance: "AI Booking + Follow-up",
+    empire: "AI + Voice + Sales Automation",
+  },
+  {
+    feature: "Ads Management",
+    growth: "14 Days",
+    dominance: "30 Days",
+    empire: "90 Days",
+  },
+  { feature: "Lead Target", growth: "5", dominance: "10", empire: "50" },
+  {
+    feature: "Delivery Time",
+    growth: "10 Days",
+    dominance: "14 Days",
+    empire: "30 Days",
+  },
+  {
+    feature: "Support",
+    growth: "From Day 1",
+    dominance: "90 Days",
+    empire: "1 Year Priority",
+  },
   {
     feature: "Best For",
-    growth: "New Businesses",
-    dominance: "Scaling Businesses",
+    growth: "Businesses ready to grow",
+    dominance: "Businesses ready to lead",
+    empire: "Enterprise brands",
   },
 ];
 
 const faqs = [
   {
-    q: "Is there a setup fee?",
-    a: "No. The price you see is all you pay monthly.",
+    q: "Do I pay monthly or one-time?",
+    a: "One-time project fee. You pay 50% to begin and 50% on delivery. GROWTH includes an optional ₦50,000/month maintenance plan after launch if you want ongoing updates.",
   },
   {
-    q: "Can I start with GROWTH and upgrade later?",
-    a: "Yes. You can upgrade to DOMINANCE anytime. We'll handle it for you.",
+    q: "Is the 'Lead Target' guaranteed?",
+    a: "We manage your ad spend, targeting, and creative specifically to work toward that number, and we keep optimizing until we've done everything possible to hit it. Results depend on your offer and market, so we're upfront that it's a target we work hard toward, not a promise independent of your business.",
   },
   {
-    q: "Do you run ads with my money?",
-    a: "For DOMINANCE, ad budget is separate. We manage up to ₦100k. You fund your own ads account.",
-  },
-  {
-    q: "What if I'm not happy?",
-    a: "Cancel anytime before your next billing date. No penalties.",
+    q: "Can I upgrade from GROWTH to DOMINANCE or EMPIRE later?",
+    a: "Yes — whatever you've already paid is credited toward the upgrade.",
   },
   {
     q: "How fast can we start?",
-    a: "Websites go live in 7-14 days. Social media starts the next week.",
+    a: "Projects begin within 2-3 days of your 50% deposit.",
+  },
+  {
+    q: "What if I'm not happy with the result?",
+    a: "We include revision rounds during the build itself, so you're reviewing and approving as we go — not surprised at the end.",
   },
 ];
 
@@ -65,9 +187,10 @@ const WHATSAPP_URL = "https://wa.me/2348078018504";
 
 function PricingCard({
   tier,
+  badge,
   price,
   tagline,
-  features,
+  featureGroups,
   result,
   highlighted,
   delay,
@@ -80,21 +203,25 @@ function PricingCard({
       className={`pricing-card ${highlighted ? "highlighted" : ""} ${visible ? "visible" : ""}`}
       style={{ transitionDelay: visible ? `${delay}s` : "0s" }}
     >
-      {highlighted && <span className="pricing-badge">Most Popular</span>}
+      {badge && <span className="pricing-badge">{badge}</span>}
       <h3 className="pricing-tier">{tier}</h3>
-      <p className="pricing-price">
-        {price}
-        <span>/month</span>
-      </p>
+      <p className="pricing-price">{price}</p>
       <p className="pricing-tagline">{tagline}</p>
 
-      <ul className="pricing-features">
-        {features.map((f) => (
-          <li key={f}>
-            <span className="check">✓</span> {f}
-          </li>
+      <div className="pricing-features">
+        {featureGroups.map((group) => (
+          <div key={group.category} className="feature-group">
+            <p className="feature-category">{group.category}</p>
+            <ul>
+              {group.items.map((item) => (
+                <li key={item}>
+                  <span className="check">✓</span> {item}
+                </li>
+              ))}
+            </ul>
+          </div>
         ))}
-      </ul>
+      </div>
 
       <p className="pricing-result">{result}</p>
 
@@ -104,15 +231,16 @@ function PricingCard({
         rel="noreferrer"
         className="pricing-btn"
       >
-        Start with {tier}
+        Book Free Audit to Begin
       </a>
+      <p className="pricing-note">50% deposit to start</p>
     </div>
   );
 }
 
 function Pricing() {
   const [heroRef, heroVisible] = useReveal();
-  useTitles("Pricing| Lines of code technologies");
+  useTitles("Pricing | Lines of Code Technologies");
 
   return (
     <section id="pricing" className="pricing">
@@ -121,11 +249,11 @@ function Pricing() {
         ref={heroRef}
       >
         <p className="pricing-eyebrow">PRICING</p>
-        <h1 className="pricing-heading">Simple Pricing. Real Results.</h1>
+        <h1 className="pricing-heading">One Clear Price. Real Results.</h1>
         <p className="pricing-sub">
-          No setup fee. No lock-in contract. Cancel anytime.
+          No hidden fees. 50% to start, 50% on delivery.
           <br />
-          We build websites that sell for you 24/7.
+          We build systems that sell for you 24/7.
         </p>
         <div className="pricing-hero-ctas">
           <a
@@ -147,23 +275,34 @@ function Pricing() {
         </div>
       </div>
 
-      <div className="pricing-grid">
+      <div className="pricing-grid pricing-grid-3">
         <PricingCard
           tier="GROWTH"
-          price="₦50,000"
-          tagline="Perfect if you want to look professional and start getting customers."
-          features={growthFeatures}
-          result="Go from invisible to online in 14 days."
+          badge="🚀"
+          price="₦650,000"
+          tagline="Your next level starts here — for businesses ready to stop guessing and start growing."
+          featureGroups={growthFeatures}
+          result="Grow beyond the ordinary — with a system that works while you sleep."
           delay={0}
         />
         <PricingCard
           tier="DOMINANCE"
-          price="₦100,000"
-          tagline='Perfect if you want leads and sales every month, not just "likes".'
-          features={dominanceFeatures}
-          result="Get consistent leads + sales every month."
+          badge="⭐ Most Popular"
+          price="₦950,000"
+          tagline="For businesses that want to OWN their market."
+          featureGroups={dominanceFeatures}
+          result="Become #1 in your industry."
           highlighted
           delay={0.15}
+        />
+        <PricingCard
+          tier="EMPIRE"
+          badge="👑 Elite"
+          price="₦2,500,000"
+          tagline="For industry leaders who want ENTERPRISE DOMINANCE."
+          featureGroups={empireFeatures}
+          result="Become the #1 Enterprise Brand in your industry."
+          delay={0.3}
         />
       </div>
 
@@ -176,6 +315,7 @@ function Pricing() {
                 <th>Feature</th>
                 <th>GROWTH</th>
                 <th>DOMINANCE</th>
+                <th>EMPIRE</th>
               </tr>
             </thead>
             <tbody>
@@ -184,6 +324,7 @@ function Pricing() {
                   <td>{row.feature}</td>
                   <td>{row.growth}</td>
                   <td>{row.dominance}</td>
+                  <td>{row.empire}</td>
                 </tr>
               ))}
             </tbody>
@@ -210,10 +351,10 @@ function Pricing() {
       </div>
 
       <div className="pricing-final-cta">
-        <h2>Ready to Turn Your Website Into a Sales Machine?</h2>
+        <h2>Ready to Own Your Market?</h2>
         <p>
-          Stop paying for a website that just "looks nice". Let's build one that
-          brings you customers.
+          Stop paying for a website that just "looks nice". Let's build a system
+          that brings you customers.
         </p>
         <a
           href={CALENDLY_URL}
