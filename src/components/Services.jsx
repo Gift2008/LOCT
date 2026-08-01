@@ -23,6 +23,11 @@ const services = [
     title: "Web Maintenance",
     desc: "Ongoing updates, monitoring, and support so your site stays fast, secure, and current.",
   },
+  {
+    number: "05",
+    title: "AI Integration",
+    desc: "Integrating AI's that works just for you. Increasing sales and site visits.",
+  },
 ];
 
 function ServiceCard({ number, title, desc, delay }) {

@@ -1,18 +1,19 @@
+// About.jsx
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "../styles/about.css";
 import useReveal from "./Hooks/useReveal";
+import deploy from "../assets/deploy.jpg";
+import coding from "../assets/coding.jpg";
+import figma from "../assets/figma.jpg";
 
 const slides = [
   {
     caption: "Where every project starts — whiteboarding the plan",
-    color: "linear-gradient(135deg, #0f172a, #334155)",
+    image: figma,
   },
-  {
-    caption: "Design in progress",
-    color: "linear-gradient(135deg, #2563eb, #06b6d4)",
-  },
-  { caption: "Deploy day", color: "linear-gradient(135deg, #f97316, #fbbf24)" },
+  { caption: "Design in progress", image: coding },
+  { caption: "Deploy day", image: deploy },
 ];
 
 function AboutCarousel() {
@@ -32,7 +33,7 @@ function AboutCarousel() {
           <div
             key={i}
             className={`carousel-slide ${i === active ? "active" : ""}`}
-            style={{ background: s.color }}
+            style={{ backgroundImage: `url(${s.image})` }}
           >
             <span className="carousel-caption">{s.caption}</span>
           </div>
@@ -72,7 +73,6 @@ function About() {
 
       <AboutCarousel />
 
-      {/* Launch + struggles */}
       <RevealBlock delay={0.1}>
         <div className="about-block">
           <h2 className="about-heading">
@@ -96,7 +96,6 @@ function About() {
         </div>
       </RevealBlock>
 
-      {/* Why we started */}
       <RevealBlock delay={0.2}>
         <div className="about-block">
           <h2 className="about-heading">Why we started this</h2>
@@ -110,7 +109,6 @@ function About() {
         </div>
       </RevealBlock>
 
-      {/* CTA to Team page */}
       <RevealBlock delay={0.3}>
         <div className="about-cta">
           <Link to="/team" className="cta-btn">

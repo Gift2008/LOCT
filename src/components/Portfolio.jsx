@@ -3,12 +3,13 @@ import React, { useState } from "react";
 import "../styles/portfolio.css";
 import useReveal from "./Hooks/useReveal";
 import { Link } from "react-router-dom";
+import project1 from "../assets/BOW.png";
 const projects = [
   {
-    title: "Solene Skincare",
-    category: "Web Design",
-    color: "linear-gradient(135deg, #d8c3a5, #8f5e3d)",
-    link: "index.html",
+    title: "Beauty On Wheels",
+    category: "Upgrades",
+    image: project1,
+    link: "https://beautyonwheels.com.ng",
   },
   {
     title: "Northgate Realty",
@@ -19,32 +20,32 @@ const projects = [
   {
     title: "Marlow & Co.",
     category: "Upgrades",
-    color: "linear-gradient(135deg, #3c3c3c, #7a7a7a)",
+    image: "linear-gradient(135deg, #3c3c3c, #7a7a7a)",
     link: "index.html",
   },
   {
     title: "Verde Botanicals",
     category: "Web Design",
-    color: "linear-gradient(135deg, #4a7c59, #a3c9a8)",
+    image: "linear-gradient(135deg, #4a7c59, #a3c9a8)",
     link: "index.html",
   },
   {
     title: "Ridgeline Fitness",
     category: "Development",
-    color: "linear-gradient(135deg, #7b2d26, #c65d3b)",
+    image: "linear-gradient(135deg, #7b2d26, #c65d3b)",
     link: "index.html",
   },
   {
     title: "Auric Studio",
     category: "Upgrades",
-    color: "linear-gradient(135deg, #1f1f1f, #a98c4a)",
+    image: "linear-gradient(135deg, #1f1f1f, #a98c4a)",
     link: "index.html",
   },
 ];
 
 const filters = ["All", "Web Design", "Development", "Upgrades"];
 
-function ProjectCard({ title, category, color, link, delay }) {
+function ProjectCard({ image, title, category, color, link, delay }) {
   const [ref, visible] = useReveal();
 
   return (
@@ -56,7 +57,8 @@ function ProjectCard({ title, category, color, link, delay }) {
         id="portfolio"
       >
         <Link to={link}>
-          <div className="project-image" style={{ background: color }} />
+          <img className="project-image" src={image} alt={title} />
+
           <div className="project-overlay">
             <span className="project-category">{category}</span>
             <h3 className="project-title">{title}</h3>

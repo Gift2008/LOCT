@@ -59,6 +59,9 @@
   overflow: hidden;
 }
 
+.carousel-slide.active {
+  opacity: 1;
+}
 .carousel-slide {
   position: absolute;
   inset: 0;
@@ -67,10 +70,11 @@
   padding: 28px;
   opacity: 0;
   transition: opacity 0.8s ease;
-}
 
-.carousel-slide.active {
-  opacity: 1;
+  background-size: cover;
+  background-position: center; /* swap to "top" per-slide if a photo gets cropped badly */
+  background-repeat: no-repeat;
+  background-color: var(--dark-bg); /* fallback while image loads */
 }
 
 .carousel-caption {

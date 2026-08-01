@@ -33,7 +33,7 @@ export const posts = [
       },
       {
         type: "p",
-        text: "At LOC, we only build 2 types: GROWTH ₦30k/mo and DOMINANCE ₦50k/mo. Not ₦80k websites that do nothing.",
+        text: "At LOC, we only build 2 types: GROWTH ₦50k/mo and DOMINANCE ₦100k/mo.",
       },
     ],
     cta: {

@@ -6,7 +6,7 @@ import useReveal from "./Hooks/useReveal";
 // Swap "value" for real numbers once you have them — count-up only
 // applies to numeric values; non-numeric ones (like "7-14") display as-is.
 const stats = [
-  { value: 50, suffix: "+", label: "Businesses served" },
+  { value: 100, suffix: "%", label: "Website Speed" },
   { value: 98, suffix: "%", label: "Client satisfaction" },
   { value: null, display: "7–14", label: "Days to launch" },
   { value: null, display: "24/7", label: "Support response" },
