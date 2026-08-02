@@ -75,18 +75,14 @@ function About() {
 
       <RevealBlock delay={0.1}>
         <div className="about-block">
-          <h2 className="about-heading">
-            <span style={{ color: "var(--accent)" }}>2026:</span> The year we
-            launched
-          </h2>
+          <h2 className="about-heading">The year we launched</h2>
           <p className="about-text">
-            We opened our doors in early 2026 with two laptops, a shared Google
-            Drive, and no clients. The first few months were rough — we lost our
-            first big pitch because we quoted a price without fully scoping the
-            work, and had to eat the difference to finish the project right. We
-            also learned the hard way that "we'll figure out hosting later" is
-            not a plan, after a client's launch got delayed a week over a DNS
-            mix-up.
+            We opened our doors with two laptops, a shared Google Drive, and no
+            clients. The first few months were rough — we lost our first big
+            pitch because we quoted a price without fully scoping the work, and
+            had to eat the difference to finish the project right. We also
+            learned the hard way that "we'll figure out hosting later" is not a
+            plan, after a client's launch got delayed a week over a DNS mix-up.
           </p>
           <p className="about-text">
             Every one of those mistakes is baked into how we work now — which is
