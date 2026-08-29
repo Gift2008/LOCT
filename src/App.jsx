@@ -9,7 +9,6 @@ import Pricing from "./components/Pricing";
 import Blog from "./components/Blog";
 import Team from "./components/Team";
 import Blogpost from "./components/Blogpost";
-import NewI from "./components/NewI";
 function App() {
   return (
     <>
@@ -17,7 +16,6 @@ function App() {
       <Routes>
         <Route path="/" element={<All />} />
         <Route path="/about-loct" element={<About />} />
-        <Route path="/new" element={<NewI />} />
         <Route path="/pricing" element={<Pricing />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/blog/:slug" element={<Blogpost />} />
