@@ -9,6 +9,8 @@ import Pricing from "./components/Pricing";
 import Blog from "./components/Blog";
 import Team from "./components/Team";
 import Blogpost from "./components/Blogpost";
+import Privacy from "./components/Privacy";
+import Datadeletion from "./components/Datadeletion";
 function App() {
   return (
     <>
@@ -19,6 +21,8 @@ function App() {
         <Route path="/pricing" element={<Pricing />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/blog/:slug" element={<Blogpost />} />
+        <Route path="/privacy-policy" element={<Privacy />} />
+        <Route path="/data-deletion" element={<Datadeletion />} />
         <Route path="/team" element={<Team />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
