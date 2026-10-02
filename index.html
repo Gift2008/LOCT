@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="./src/assets/loct2.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css"
+      rel="stylesheet"
+    />
     <title>Lines of Code Technlogies</title>
     <script
       async
@@ -126,24 +130,16 @@
         src="https://www.facebook.com/tr?id=888820794055807&ev=PageView&noscript=1"
     /></noscript>
     <!-- End Meta Pixel Code -->
-    <script type="text/javascript">
-      function loadTawk() {
-        var s1 = document.createElement("script"),
-          s0 = document.getElementsByTagName("script")[0];
-        s1.async = true;
-        s1.src = "https://embed.tawk.to/6a66352de36efe1d4eb18934/1jufjvfej";
-        s1.charset = "UTF-8";
-        s1.setAttribute("crossorigin", "*");
-        s0.parentNode.insertBefore(s1, s0);
-        window.removeEventListener("scroll", loadTawk);
-        window.removeEventListener("mousemove", loadTawk);
-      }
-      window.addEventListener("scroll", loadTawk, {
-        once: true,
-        passive: true,
+    <!-- n8n -->
+    <script type="module">
+      import { createChat } from "https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js";
+
+      createChat({
+        webhookUrl:
+          "https://n8n.lines-of-code.com.ng/webhook/2855d60d-751a-4058-a54-579685a52615/chat",
       });
-      window.addEventListener("mousemove", loadTawk, { once: true });
     </script>
+    <!-- end -->
     <script type="text/javascript">
       _linkedin_partner_id = "9402850";
       window._linkedin_data_partner_ids =
