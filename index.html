@@ -9,6 +9,17 @@
       rel="stylesheet"
     />
     <title>Lines of Code Technlogies</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css"
+      rel="stylesheet"
+    />
+
+    <style>
+      /* Hide n8n branding footer */
+      .chat-get-started-footer .chat-powered-by {
+        display: none !important;
+      }
+    </style>
     <script
       async
       src="https://www.googletagmanager.com/gtag/js?id=G-GL95JYC41D"
@@ -131,14 +142,36 @@
     /></noscript>
     <!-- End Meta Pixel Code -->
     <!-- n8n -->
+
     <script type="module">
       import { createChat } from "https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js";
 
       createChat({
         webhookUrl:
           "https://n8n.lines-of-code.com.ng/webhook/2855d60d-751a-4058-a54-579685a52615/chat",
+
+        mode: "window",
+        defaultLanguage: "en",
+        showWelcomeScreen: true,
+        loadPreviousSession: false,
+
+        initialMessages: [
+          "Hi there! 👋",
+          "I’m Ayo. What are we building today?",
+        ],
+
+        i18n: {
+          en: {
+            title: "Welcome to Lines Of Code Technologies 👋",
+            subtitle: "What are we building today?",
+            footer: "",
+            getStarted: "Start a Conversation",
+            inputPlaceholder: "Type your message...",
+          },
+        },
       });
     </script>
+
     <!-- end -->
     <script type="text/javascript">
       _linkedin_partner_id = "9402850";
