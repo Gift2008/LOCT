@@ -146,6 +146,38 @@
     <script type="module">
       import { createChat } from "https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js";
 
+      const LOCT_WEBSITE_ID_KEY = "loct_website_identity_id";
+      const N8N_SESSION_KEY = "n8n-chat/sessionId";
+
+      function generateId() {
+        if (window.crypto && typeof window.crypto.randomUUID === "function") {
+          return window.crypto.randomUUID();
+        }
+
+        return (
+          "LOCT-WEB-" +
+          Date.now().toString(36) +
+          "-" +
+          Math.random().toString(36).slice(2, 12)
+        );
+      }
+
+      let websiteIdentityId = localStorage.getItem(LOCT_WEBSITE_ID_KEY);
+
+      if (!websiteIdentityId) {
+        websiteIdentityId = generateId();
+
+        localStorage.setItem(LOCT_WEBSITE_ID_KEY, websiteIdentityId);
+      }
+
+      let chatSessionId = localStorage.getItem(N8N_SESSION_KEY);
+
+      if (!chatSessionId) {
+        chatSessionId = generateId();
+
+        localStorage.setItem(N8N_SESSION_KEY, chatSessionId);
+      }
+
       createChat({
         webhookUrl:
           "https://n8n.lines-of-code.com.ng/webhook/962175b5-bf4b-42e1-b223-9e8f1eb0dce6/chat",
@@ -153,7 +185,14 @@
         mode: "window",
         defaultLanguage: "en",
         showWelcomeScreen: true,
-        loadPreviousSession: false,
+
+        loadPreviousSession: true,
+
+        chatSessionKey: "sessionId",
+
+        metadata: {
+          website_identity_id: websiteIdentityId,
+        },
 
         initialMessages: [
           "Hi there! 👋",
@@ -163,9 +202,13 @@
         i18n: {
           en: {
             title: "Welcome to Lines Of Code Technologies 👋",
+
             subtitle: "What are we building today?",
+
             footer: "",
+
             getStarted: "Start a Conversation",
+
             inputPlaceholder: "Type your message...",
           },
         },
