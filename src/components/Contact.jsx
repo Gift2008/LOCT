@@ -3,8 +3,10 @@ import React, { useState } from "react";
 import emailjs from "@emailjs/browser";
 import "../styles/contact.css";
 import useReveal from "./Hooks/useReveal";
+import { useLocale } from "../i18n/LocaleProvider";
 
 function Contact() {
+  const { t } = useLocale();
   const [ref, visible] = useReveal();
   const [form, setForm] = useState({
     name: "",
@@ -55,8 +57,8 @@ function Contact() {
   return (
     <section id="contact" className="contact" ref={ref}>
       <div className={`contact-info reveal-fade ${visible ? "visible" : ""}`}>
-        <p className="contact-eyebrow">GET IN TOUCH</p>
-        <h2 className="contact-heading">Let's build your site</h2>
+        <p className="contact-eyebrow">{t("contact.eyebrow")}</p>
+        <h2 className="contact-heading">{t("contact.heading")}</h2>
         <p className="contact-sub">
           Reach out directly, or send a message and we'll get back to you within
           1–2 business days.
@@ -154,51 +156,51 @@ function Contact() {
         onSubmit={handleSubmit}
       >
         <div className="form-row">
-          <label htmlFor="name">Name</label>
+          <label htmlFor="name"> {t("contact.name.name")}</label>
           <input
             id="name"
             name="name"
             type="text"
             value={form.name}
             onChange={handleChange}
-            placeholder="Your name"
+            placeholder={t("contact.name.placeholder")}
           />
         </div>
         <div className="form-row">
-          <label htmlFor="email">Email</label>
+          <label htmlFor="email"> {t("contact.email.name")}</label>
           <input
             id="email"
             name="email"
             type="email"
             value={form.email}
             onChange={handleChange}
-            placeholder="you@example.com"
+            placeholder={t("contact.email.placeholder")}
           />
         </div>
         <div className="form-row">
-          <label htmlFor="service">What do you need?</label>
+          <label htmlFor="service"> {t("contact.service.name")}</label>
           <select
             id="service"
             name="service"
             value={form.service}
             onChange={handleChange}
           >
-            <option value="">Select one</option>
-            <option value="design">Web Design</option>
-            <option value="development">Web Development</option>
-            <option value="upgrade">Website Upgrade</option>
-            <option value="maintenance">Web Maintenance</option>
+            <option value=""> {t("contact.service.placeholder")}</option>
+            <option value="design"> {t("contact.service.option1")}</option>
+            <option value="development"> {t("contact.service.option2")}</option>
+            <option value="upgrade"> {t("contact.service.option3")}</option>
+            <option value="maintenance"> {t("contact.service.option4")}</option>
           </select>
         </div>
         <div className="form-row">
-          <label htmlFor="message">Message</label>
+          <label htmlFor="message"> {t("contact.message.name")}</label>
           <textarea
             id="message"
             name="message"
             rows="5"
             value={form.message}
             onChange={handleChange}
-            placeholder="Tell us about your project..."
+            placeholder={t("contact.message.placeholder")}
           />
         </div>
         <button

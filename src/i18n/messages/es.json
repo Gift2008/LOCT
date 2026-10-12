@@ -1,0 +1,789 @@
+{
+  "nav": {
+    "services": "Servicios",
+    "process": "El proceso",
+    "portfolio": "Portafolio",
+    "testimonials": "Testimonios",
+    "contact": "Contacto",
+    "about": "Sobre nosotros",
+    "blog": "Blog",
+    "pricing": "Precios",
+    "cta": "Reserva tu llamada gratuita",
+    "fields": {
+      "webDesign": "Diseño web"
+    }
+  },
+  "hero": {
+    "headline": "¿Tienes una idea?",
+    "firstsubheadline": "Tú lo imaginas. Nosotros lo programamos.",
+    "secondsubhead": "Sitios web y sistemas de IA que realmente hacen el trabajo.",
+    "subhead": " Lines of Code Technologies crea sitios web de alto rendimiento y herramientas prácticas de IA que ayudan a las empresas en crecimiento a expandirse.",
+    "ctaPrimary": "Empieza tu proyecto hoy",
+    "ctaSecondary": "Ver nuestro trabajo →"
+  },
+  "proof": {
+    "Website Speed": "Velocidad del sitio web",
+    "Client satisfaction": "Satisfacción del cliente",
+    "Days to launch": "Días hasta el lanzamiento",
+    "Support response": "Tiempo de respuesta del soporte"
+  },
+  "services": {
+    "eyebrow": "LO QUE HACEMOS",
+    "heading": "Todo lo que tu sitio web necesita",
+    "page": {
+      "back": "← Todos los servicios",
+      "whatYouGet": "Qué obtienes",
+      "idealFor": "Ideal para",
+      "bookAudit": "Reservar auditoría gratuita",
+      "whatsapp": "Chatea con nosotros por WhatsApp"
+    },
+    "items": {
+      "ai-integration": {
+        "title": "Integración de IA",
+        "summary": "Integramos IA que trabaja para ti y aumenta las ventas y las visitas al sitio.",
+        "tagline": "IA que trabaja para ti, no en contra de tu flujo de trabajo.",
+        "description": "Integramos herramientas de IA directamente en tu sitio web o en tus sistemas empresariales: chatbots que realmente entienden tu negocio, seguimientos automatizados y recomendaciones inteligentes que convierten visitantes en compradores.",
+        "features": [
+          "Chatbot de IA personalizado y entrenado para tu negocio",
+          "Seguimiento automatizado de clientes potenciales, 24/7",
+          "Recomendaciones inteligentes de productos y servicios",
+          "Integración con WhatsApp, correo electrónico o tus herramientas actuales"
+        ],
+        "idealFor": "Empresas que reciben tráfico, pero pierden clientes potenciales por responder demasiado tarde."
+      },
+      "web-development": {
+        "title": "Desarrollo web",
+        "summary": "Tu diseño hecho realidad: rápido, adaptable y preparado para crecer junto con tu negocio.",
+        "tagline": "Tu diseño hecho realidad: rápido y preparado para crecer.",
+        "description": "Convertimos un diseño —tuyo o creado por nosotros— en un sitio web funcional, de carga rápida, adaptable a móviles y construido sobre una base que no necesitará rehacerse por completo a medida que crezca tu negocio.",
+        "features": [
+          "Desarrollo totalmente adaptable, con prioridad para móviles",
+          "Carga rápida y rendimiento optimizado",
+          "Código limpio y escalable, sin atajos",
+          "Preparado para integrarse con pagos, CRM y mucho más"
+        ],
+        "idealFor": "Empresas que ya tienen un diseño (o una visión clara) y necesitan desarrollarlo correctamente."
+      },
+      "website-upgrades": {
+        "title": "Mejoras de sitios web",
+        "summary": "Moderniza un sitio anticuado con nuevas funciones, mejor rendimiento y un diseño renovado.",
+        "tagline": "Moderniza lo que ya tienes.",
+        "description": "Un sitio anticuado no siempre necesita reconstruirse por completo. Revisamos qué lo está frenando —rendimiento, diseño o funciones ausentes— y mejoramos exactamente lo necesario.",
+        "features": [
+          "Auditoría completa del sitio (velocidad, diseño y experiencia móvil)",
+          "Rediseño específico de las secciones menos eficaces",
+          "Mejoras de rendimiento y SEO",
+          "Nuevas funciones sin afectar lo que ya funciona"
+        ],
+        "idealFor": "Empresas con un sitio web existente que empieza a quedarse anticuado."
+      },
+      "web-maintenance": {
+        "title": "Mantenimiento web",
+        "summary": "Actualizaciones, supervisión y soporte continuos para mantener tu sitio rápido, seguro y actualizado.",
+        "tagline": "Nos ocupamos de tu sitio para que tú no tengas que preocuparte.",
+        "description": "Los sitios web pueden fallar sin que nadie lo note: un complemento queda obsoleto o un formulario deja de enviar mensajes. Supervisamos, actualizamos y solucionamos problemas antes de que te cuesten una venta.",
+        "features": [
+          "Actualizaciones periódicas y parches de seguridad",
+          "Supervisión de disponibilidad y rendimiento",
+          "Corrección prioritaria de errores",
+          "Informe mensual del estado del sitio"
+        ],
+        "idealFor": "Empresas que quieren que su sitio funcione sin problemas, sin tener que ocuparse de él."
+      },
+      "web-design": {
+        "title": "Diseño web",
+        "summary": "Diseños personalizados en Figma basados en tu marca, no una plantilla con tu logotipo añadido.",
+        "tagline": "Diseño personalizado basado en tu marca.",
+        "description": "No usamos una plantilla con tu logotipo añadido: diseñamos teniendo en cuenta tu marca, tus clientes y lo que quieres vender, empezando en Figma antes de escribir una sola línea de código.",
+        "features": [
+          "Diseño personalizado en Figma, no un tema prediseñado",
+          "Diseñado en torno a la identidad de tu marca",
+          "Revisas y apruebas cada pantalla",
+          "Diseñado para convertir, no solo para verse bien"
+        ],
+        "idealFor": "Empresas que quieren un sitio que refleje su identidad, no una plantilla."
+      },
+      "product-design": {
+        "title": "Diseño de producto (UI/UX)",
+        "summary": "Interfaces para aplicaciones y programas que la gente disfruta usando: investigadas, estructuradas y perfeccionadas.",
+        "tagline": "Interfaces que la gente disfruta usando.",
+        "description": "En aplicaciones y software, el buen diseño no es decoración: consiste en que la gente pueda usar el producto fácilmente. Investigamos, creamos esquemas y diseñamos interfaces intuitivas.",
+        "features": [
+          "Investigación de usuarios y mapeo de flujos",
+          "Esquemas antes del diseño de alta fidelidad",
+          "Sistema completo de diseño UI (componentes reutilizables)",
+          "Pruebas de usabilidad antes de la entrega"
+        ],
+        "idealFor": "Startups y equipos que desarrollan una aplicación o un producto de software desde cero."
+      },
+      "data-analysis": {
+        "title": "Análisis de datos",
+        "summary": "Convertimos los datos brutos de tu negocio en paneles e información útil para tomar decisiones.",
+        "tagline": "Convierte tus datos en decisiones.",
+        "description": "Muchas empresas recopilan datos, pero nunca los utilizan. Creamos paneles e informes que convierten tus cifras en información clara y práctica: qué funciona, qué no y qué hacer después.",
+        "features": [
+          "Paneles personalizados (ventas, tráfico y comportamiento de clientes)",
+          "Informes mensuales o semanales",
+          "Conclusiones claras, no solo gráficos",
+          "Integración con tus herramientas actuales (Google Analytics, CRM, etc.)"
+        ],
+        "idealFor": "Empresas que tienen datos, pero no saben cómo aprovecharlos."
+      },
+      "branding-design": {
+        "title": "Diseño gráfico e identidad de marca",
+        "summary": "Logotipos, identidad visual y sistemas de diseño que hacen que tu negocio sea reconocible al instante.",
+        "tagline": "Haz que tu negocio sea reconocible al instante.",
+        "description": "Tu logotipo, tus colores y tu identidad visual suelen ser la primera impresión que alguien tiene de tu negocio. Creamos un sistema visual coherente para que proyectes credibilidad en todas partes: tu sitio web, redes sociales y facturas.",
+        "features": [
+          "Diseño de logotipo e identidad de marca",
+          "Sistema de diseño completo (colores, tipografía y normas de uso)",
+          "Plantillas para redes sociales",
+          "Material corporativo (facturas, tarjetas, etc.)"
+        ],
+        "idealFor": "Nuevas empresas o negocios cuya identidad de marca no es coherente entre plataformas."
+      },
+      "cyber-security": {
+        "title": "Ciberseguridad",
+        "summary": "Protegemos tu sitio y tus sistemas frente a amenazas que muchas empresas no ven venir.",
+        "tagline": "Protección frente a amenazas que muchas empresas no detectan.",
+        "description": "Las pequeñas empresas son un objetivo porque se suele suponer que tienen una seguridad débil. Auditamos tu sitio y tus sistemas, corregimos las vulnerabilidades y configuramos una supervisión continua.",
+        "features": [
+          "Auditoría de seguridad completa",
+          "Corrección de vulnerabilidades",
+          "Configuración de SSL, cortafuegos y controles de acceso",
+          "Supervisión continua de amenazas"
+        ],
+        "idealFor": "Cualquier empresa que gestione datos de clientes, pagos o información confidencial."
+      },
+      "qa-testing": {
+        "title": "Pruebas de control de calidad como servicio",
+        "summary": "Detectamos errores antes que tus clientes mediante pruebas manuales y automatizadas de tu producto.",
+        "tagline": "Detecta los errores antes que tus clientes.",
+        "description": "Si un cliente descubre un error, probablemente lo perderás. Probamos tu sitio o aplicación a fondo, de forma manual y automatizada, antes y después de cada lanzamiento.",
+        "features": [
+          "Pruebas manuales y automatizadas",
+          "Pruebas en distintos navegadores y dispositivos",
+          "Seguimiento e informes de errores",
+          "Ciclos de control de calidad antes del lanzamiento y después de cada versión"
+        ],
+        "idealFor": "Equipos que publican actualizaciones con frecuencia y necesitan una red de seguridad antes de lanzarlas."
+      },
+      "cloud-devops": {
+        "title": "Nube, DevOps e infraestructura",
+        "summary": "Infraestructura fiable y escalable para mantener tu producto en línea y evitar que los despliegues causen problemas.",
+        "tagline": "Infraestructura siempre disponible que no interrumpe los despliegues.",
+        "description": "Detrás de cada producto fiable hay una infraestructura en la que nadie piensa hasta que falla. Configuramos y gestionamos tu alojamiento en la nube, los procesos de despliegue y el escalado para que tu producto siga en línea.",
+        "features": [
+          "Configuración de infraestructura en la nube (AWS, GCP, etc.)",
+          "Procesos CI/CD para despliegues rápidos y seguros",
+          "Supervisión y escalado automático",
+          "Copias de seguridad y planificación de recuperación ante desastres"
+        ],
+        "idealFor": "Productos en crecimiento que no pueden permitirse interrupciones."
+      },
+      "app-development": {
+        "title": "Desarrollo de aplicaciones",
+        "summary": "Aplicaciones nativas y multiplataforma que funcionan tan bien como se ven.",
+        "tagline": "Aplicaciones que funcionan tan bien como se ven.",
+        "description": "Creamos aplicaciones móviles nativas o multiplataforma desde la idea hasta el lanzamiento: bien diseñadas, desarrolladas correctamente y probadas antes de llegar a una tienda de aplicaciones.",
+        "features": [
+          "Desarrollo para iOS, Android o multiplataforma",
+          "Desarrollo a partir de tu diseño o diseño desde cero",
+          "Asistencia para publicar en tiendas de aplicaciones",
+          "Soporte y actualizaciones posteriores al lanzamiento"
+        ],
+        "idealFor": "Empresas listas para llevar su producto al móvil."
+      },
+      "ads": {
+        "title": "Anuncios",
+        "summary": "Campañas en Facebook, Google e Instagram que generan clientes potenciales, no solo impresiones.",
+        "tagline": "Campañas que generan clientes potenciales, no solo impresiones.",
+        "description": "Publicar anuncios sin estrategia hace que el dinero se agote rápidamente. Gestionamos la segmentación, las creatividades y los textos en Facebook, Instagram y Google, optimizando las campañas para conseguir clientes potenciales reales y no métricas superficiales.",
+        "features": [
+          "Gestión de anuncios en Facebook, Instagram y Google",
+          "Creatividades publicitarias y redacción de anuncios",
+          "Segmentación de audiencia y optimización",
+          "Informes semanales de rendimiento"
+        ],
+        "idealFor": "Empresas con una oferta que funciona y necesita llegar a más personas."
+      }
+    }
+  },
+  "portfolio": {
+    "eyebrow": "NUESTRO TRABAJO",
+    "heading": "Algunos de nuestros proyectos recientes"
+  },
+  "process": {
+    "eyebrow": "CÓMO TRABAJAMOS",
+    "heading": "De la idea al sitio web publicado"
+  },
+  "testimonials": {
+    "heading": "LO QUE DICEN NUESTROS CLIENTES",
+    "testimonial1": {
+      "quote": "Loct tomó una idea poco definida y la convirtió en un sitio que realmente nos representa. Todo el proceso fue fluido, desde la primera llamada hasta el lanzamiento.",
+      "name": "Amara Okafor",
+      "role": "Fundadora, Solene Skincare"
+    },
+    "testimonial2": {
+      "quote": "Nuestro antiguo sitio nos daba vergüenza. El nuevo carga rápido, tiene un aspecto excelente y ahora los clientes lo elogian.",
+      "name": "Daniel Reyes",
+      "role": "Propietario, Ridgeline Fitness"
+    },
+    "testimonial3": {
+      "quote": "Trabajar con Lines of Code Technologies fue muy sencillo. Transformaron nuestra visión en un sitio web moderno y adaptable para Frankey Powa Technologies. Excelente comunicación, diseño y resultados. LOCT es el equipo al que debes acudir para llevar tu negocio a internet de la manera correcta.",
+      "role": "Director ejecutivo, Frankey Powa Technologies",
+      "name": "Franklin Mbilitem"
+    }
+  },
+  "steps": {
+    "step1": {
+      "number": "01",
+      "title": "Descubrimiento",
+      "description": "Empezamos por comprender tu negocio, tus objetivos y tu público. Así podemos crear un sitio web que satisfaga tus necesidades y supere tus expectativas."
+    },
+    "step2": {
+      "number": "02",
+      "title": "Diseño",
+      "description": "Nuestro equipo de diseño crea un sitio web atractivo y fácil de usar que refleja la identidad de tu marca y conecta con tu público."
+    },
+    "step3": {
+      "number": "03",
+      "title": "Desarrollo",
+      "description": "Nuestros desarrolladores dan vida al diseño y se aseguran de que el sitio sea adaptable, rápido y esté optimizado para los motores de búsqueda."
+    },
+    "step4": {
+      "number": "04",
+      "title": "Lanzamiento",
+      "description": "Cuando el sitio web está listo, lo publicamos y ofrecemos soporte continuo para que siga funcionando bien."
+    }
+  },
+  "contact": {
+    "eyebrow": "PONTE EN CONTACTO",
+    "heading": "Construyamos tu sitio web",
+    "name": {
+      "name": "Nombre",
+      "placeholder": "Introduce tu nombre"
+    },
+    "email": {
+      "name": "Correo electrónico",
+      "placeholder": "tu@ejemplo.com"
+    },
+    "service": {
+      "name": "¿Qué necesitas?",
+      "select": "Selecciona un servicio",
+      "option1": "Diseño web",
+      "option2": "Desarrollo web",
+      "option3": "Mejora del sitio web",
+      "option4": "Mantenimiento web",
+      "option5": "Otro",
+      "placeholder": "Selecciona una opción"
+    },
+    "message": {
+      "name": "Mensaje",
+      "placeholder": "Cuéntanos sobre tu proyecto..."
+    },
+    "submit": "Enviar mensaje",
+    "sending": "Enviando...",
+    "success": "Gracias. Nos pondremos en contacto contigo pronto.",
+    "error": "Completa todos los campos obligatorios."
+  },
+  "about": {
+    "slides": {
+      "slide1": {
+        "caption": "Donde comienza cada proyecto: planificación en la pizarra"
+      },
+      "slide2": {
+        "caption": "Diseño en curso"
+      },
+      "slide3": {
+        "caption": "Día del despliegue"
+      }
+    },
+    "theyear": {
+      "head": "El año en que empezamos",
+      "body1": " Abrimos nuestras puertas con dos portátiles, un Google Drive compartido y ningún cliente. Los primeros meses fueron difíciles: perdimos nuestra primera gran propuesta porque dimos un precio sin definir por completo el alcance del trabajo y tuvimos que asumir la diferencia para terminar el proyecto correctamente. También aprendimos por las malas que «ya resolveremos el alojamiento más adelante» no es un plan, después de que el lanzamiento de un cliente se retrasara una semana por un problema de DNS.",
+      "body2": " Todos esos errores forman parte de nuestra manera de trabajar hoy. Por eso elaboramos presupuestos con cuidado, lo probamos todo antes de entregar y nunca dejamos a un cliente sin saber qué ocurrirá después."
+    },
+    "why": {
+      "head": "Por qué empezamos",
+      "body": " Seguíamos viendo lo mismo: buenos negocios con productos excelentes que eran invisibles en internet. No porque no merecieran clientes, sino porque nadie les había creado un sitio web que trabajara tanto como ellos. Creamos Loct para cerrar esa brecha, ayudando a una empresa a la vez."
+    },
+    "meetButton": {
+      "text": "Conoce al equipo de LOCT"
+    }
+  },
+  "team": {
+    "founder": {
+      "name": "Austine Mbilitem",
+      "role": "Fundador",
+      "initials": "AM",
+      "bio": "Dirige la estrategia y las relaciones con los clientes en Loct. Se asegura de que cada proyecto resuelva el problema empresarial que hay detrás de la solicitud, no solo la necesidad superficial. Fundó Loct después de escuchar demasiadas historias de empresarios perjudicados por agencias que desaparecieron tras el lanzamiento."
+    },
+    "coFounder": {
+      "name": "Gift Ifeanyi",
+      "role": "Cofundador / líder técnico",
+      "initials": "GI",
+      "bio": "Dirige el diseño y el desarrollo, convirtiendo la estrategia en sitios web reales, funcionales y rápidos. Presta especial atención a los detalles que muchos no perciben: los tiempos de carga, los problemas en móviles y las pequeñas animaciones que dan vida a un sitio."
+    }
+  },
+  "blog": {
+    "eyebrow": "RECURSOS",
+    "heading": "Hablemos claro sobre sitios web que realmente funcionan",
+    "readMore": "Leer más →",
+    "backToPosts": "← Volver a todas las publicaciones",
+    "illustrative": "Ejemplo ilustrativo",
+    "posts": {
+      "website-pricing-2026": {
+        "title": "Precios de sitios web en Nigeria en 2026: ¿cuánto deberías pagar realmente?",
+        "date": "Julio de 2026",
+        "readTime": "4 min de lectura",
+        "excerpt": "Si has pedido presupuesto a tres desarrolladores web en Lagos, probablemente hayas recibido tres precios muy diferentes. Esta es la razón.",
+        "ctaLabel": "Escríbenos para saber qué opción encaja con tu negocio",
+        "body": [
+          {
+            "type": "p",
+            "text": "Si has pedido presupuesto a tres desarrolladores web en Lagos, probablemente hayas recibido tres precios muy diferentes: ₦80k, ₦500k y ₦1,5M. ¿Por qué?"
+          },
+          {
+            "type": "h4",
+            "text": "Los tres tipos de sitios web que existen actualmente en Nigeria"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "₦50k–₦150k: sitio «informativo». Se ve bien, pero no tiene estrategia ni genera clientes potenciales. Simplemente está en internet.",
+              "₦200k–₦700k: sitio de «crecimiento». Móvil, rápido, con chat de WhatsApp y SEO básico. Diseñado para conseguir clientes.",
+              "₦800k–₦3M: sitio de «dominio». Una máquina de ventas completa con blog SEO, anuncios, reservas y analítica. Se amortiza por sí mismo."
+            ]
+          },
+          {
+            "type": "h4",
+            "text": "Entonces, ¿por qué deberías pagar TÚ?"
+          },
+          {
+            "type": "p",
+            "text": "Pregúntate: «¿Este sitio web me conseguirá clientes en los próximos 90 días?». Si la respuesta es no, es demasiado barato."
+          },
+          {
+            "type": "p",
+            "text": "En LOC ofrecemos tres paquetes: GROWTH (₦650.000), DOMINANCE (₦950.000) y EMPIRE (₦2.500.000), no sitios de ₦80k que no hacen nada."
+          }
+        ]
+      },
+      "whatsapp-widget-case-study": {
+        "title": "Cómo un widget de chat de WhatsApp consiguió 13 clientes potenciales en 8 días",
+        "date": "Julio de 2026",
+        "readTime": "3 min de lectura",
+        "excerpt": "Una marca de cuidado de la piel en Lagos recibía 200 visitas semanales y no conseguía ventas. Este fue el cambio que lo solucionó.",
+        "ctaLabel": "Configura gratis el chat de WhatsApp",
+        "body": [
+          {
+            "type": "p",
+            "text": "Cliente: una marca de cuidado de la piel en Lagos. Problema: 200 visitas semanales al sitio y cero ventas."
+          },
+          {
+            "type": "h4",
+            "text": "¿Qué fallaba?"
+          },
+          {
+            "type": "p",
+            "text": "La gente tenía preguntas: «¿Entregan en Abuja?» «¿Es para piel grasa?». Pero no había forma de preguntar, así que se iban."
+          },
+          {
+            "type": "h4",
+            "text": "Lo que hicimos en 10 minutos"
+          },
+          {
+            "type": "p",
+            "text": "Instalamos un widget de chat y conectamos WhatsApp. Añadimos una frase: «Hola 👋 ¿Tienes una pregunta rápida? Respondemos en 2 minutos»."
+          },
+          {
+            "type": "h4",
+            "text": "El resultado"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "Días 1–3: 4 chats. 2 se convirtieron en clientes",
+              "Días 4–7: 11 chats en total. 5 se convirtieron en clientes",
+              "Ingresos: ₦127.000 gracias a una herramienta gratuita"
+            ]
+          },
+          {
+            "type": "p",
+            "text": "Lección: tu sitio web no es una valla publicitaria; es un vendedor. Si nadie puede hablar contigo, estás perdiendo dinero."
+          }
+        ]
+      },
+      "why-nigerian-websites-dont-sell": {
+        "title": "Por qué la mayoría de los sitios web empresariales nigerianos no venden en 2026",
+        "date": "Julio de 2026",
+        "readTime": "5 min de lectura",
+        "excerpt": "Gastaste ₦200k en un sitio web. Es precioso, pero no hay resultados. Esta es la razón.",
+        "ctaLabel": "Arregla mi sitio web: reserva una auditoría gratuita",
+        "body": [
+          {
+            "type": "p",
+            "text": "Gastaste ₦200k en un sitio web. Es precioso, pero no hay resultados. Esta es la razón:"
+          },
+          {
+            "type": "h4",
+            "text": "Error 1: no hay una oferta"
+          },
+          {
+            "type": "p",
+            "text": "«Bienvenido a nuestro sitio web» no es una oferta. Solución: «Reserva una auditoría web gratuita de 15 minutos» o «Obtén un 10 % de descuento esta semana»."
+          },
+          {
+            "type": "h4",
+            "text": "Error 2: no hay forma de contactar contigo"
+          },
+          {
+            "type": "p",
+            "text": "Un formulario de contacto que acaba en spam y sin WhatsApp. Solución: un widget de chat en vivo. El 80 % de los nigerianos chatea antes de llamar."
+          },
+          {
+            "type": "h4",
+            "text": "Error 3: no hay pruebas"
+          },
+          {
+            "type": "p",
+            "text": "Sin testimonios, portafolio ni foto del equipo. Solución: añade dos casos de éxito y tres logotipos de clientes. Confianza = ventas."
+          },
+          {
+            "type": "h4",
+            "text": "Error 4: lento y no adaptado a móviles"
+          },
+          {
+            "type": "p",
+            "text": "Si tarda seis segundos en cargar, el 50 % de las personas se va. Solución: prueba la velocidad, utiliza una CDN y comprime las imágenes."
+          },
+          {
+            "type": "h4",
+            "text": "La solución de LOC"
+          },
+          {
+            "type": "p",
+            "text": "Revisamos los cuatro puntos gratis. En 15 minutos te diremos exactamente qué está perjudicando tus ventas."
+          }
+        ]
+      }
+    }
+  },
+  "pricing": {
+    "eyebrow": "PRECIOS",
+    "heading": "Un precio claro. Resultados reales.",
+    "sub1": "Sin cargos ocultos. 50 % al comenzar y 50 % al entregar.",
+    "sub2": " Creamos sistemas que venden por ti las 24 horas, los 7 días de la semana.",
+    "btn1": "  Reserva una auditoría gratuita de 15 minutos",
+    "btn2": "   Chatea con nosotros por WhatsApp",
+    "pricingCards": {
+      "card1": {
+        "tier": "GROWTH",
+        "price": "₦650,000",
+        "tagline": "Tu siguiente nivel empieza aquí: para empresas listas para dejar de improvisar y empezar a crecer.",
+        "result": "Supera lo ordinario con un sistema que trabaja mientras duermes.",
+        "features": {
+          "category": "Sitio web de alta conversión",
+          "items": {
+            "item1": "Página de aterrizaje + embudo de contacto",
+            "item2": "Diseñado para convertir visitantes en clientes potenciales",
+            "item3": "Limpio, rápido y optimizado para móviles"
+          }
+        },
+        "features2": {
+          "category": "Anuncios de calidad",
+          "items": {
+            "item1": "Configuración de anuncios de Facebook y Google durante 14 días",
+            "item2": "Objetivo de 5 clientes potenciales",
+            "item3": "Se ha demostrado que aumenta el rendimiento publicitario en más de un 220 %"
+          }
+        },
+        "features3": {
+          "category": "Proceso de conversión sencillo",
+          "items": {
+            "item1": "Visitante → cliente potencial, sin clics desperdiciados",
+            "item2": "Cada paso está diseñado para conseguirte llamadas",
+            "item3": "Sin complejidad ni desorden: solo resultados"
+          }
+        },
+        "features4": {
+          "category": "Entrega rápida",
+          "items": {
+            "item1": "Entrega en 10 días",
+            "item2": "Mantenimiento opcional por ₦50.000 al mes",
+            "item3": "Soporte incluido desde el primer día"
+          }
+        }
+      },
+      "card2": {
+        "tier": "DOMINANCE",
+        "badge": "⭐ Más popular",
+        "price": "₦950,000",
+        "tagline": "Para empresas que quieren DOMINAR su mercado.",
+        "result": "Conviértete en el número 1 de tu sector.",
+        "features": {
+          "category": "Sitio web de calidad",
+          "items": {
+            "item1": "SEO + blog + embudos de captación",
+            "item2": "Paystack + WhatsApp + optimización móvil",
+            "item3": "Diseñado para convertir visitantes en clientes"
+          }
+        },
+        "features2": {
+          "category": "IA de calidad",
+          "items": {
+            "item1": "IA avanzada que reserva citas",
+            "item2": "Seguimiento automático 24/7: ningún cliente potencial perdido",
+            "item3": "Entrenada para tu negocio y multilingüe"
+          }
+        },
+        "features3": {
+          "category": "Anuncios de calidad",
+          "items": {
+            "item1": "Configuración de anuncios de Facebook y Google durante 30 días",
+            "item2": "Objetivo de 10 clientes potenciales",
+            "item3": "Textos publicitarios, segmentación y gestión"
+          }
+        },
+        "features4": {
+          "category": "Soporte de calidad",
+          "items": {
+            "item1": "Entrega en 14 días",
+            "item2": "90 días de soporte y formación",
+            "item3": "Dominio, alojamiento y SSL incluidos"
+          }
+        }
+      },
+      "card3": {
+        "tier": "EMPIRE",
+        "badge": "👑 Élite",
+        "price": "₦2,500,000",
+        "tagline": "Para líderes del sector que buscan DOMINIO EMPRESARIAL.",
+        "result": "Conviértete en la marca empresarial número 1 de tu sector.",
+        "features": {
+          "category": "Sitio web y sistemas empresariales",
+          "items": {
+            "item1": "CRM personalizado + inventario + portal del personal",
+            "item2": "Integración avanzada de API y arquitectura de bases de datos",
+            "item3": "Seguridad empresarial + alojamiento en la nube + copias de seguridad",
+            "item4": "Preparado para crecer hasta más de un millón de usuarios"
+          }
+        },
+        "features2": {
+          "category": "IA y automatización Empire",
+          "items": {
+            "item1": "Chatbot avanzado de IA entrenado para TU negocio",
+            "item2": "Reservas automáticas, seguimiento y soporte 24/7",
+            "item3": "Integración multilingüe con voz y WhatsApp",
+            "item4": "Cualificación de clientes potenciales y automatización de ventas"
+          }
+        },
+        "features3": {
+          "category": "Marketing empresarial",
+          "items": {
+            "item1": "Gestión de anuncios de Facebook y Google durante 90 días",
+            "item2": "Objetivo de 50 clientes potenciales",
+            "item3": "SEO + estrategia de contenidos + automatización de correo electrónico",
+            "item4": "Analítica completa y seguimiento de conversiones"
+          }
+        },
+        "features4": {
+          "category": "Soporte prémium",
+          "items": {
+            "item1": "Entrega en 30 días",
+            "item2": "Un año de soporte prioritario y mantenimiento",
+            "item3": "Formación del equipo y gestor de proyecto dedicado",
+            "item4": "Dominio, alojamiento empresarial, SSL y seguridad incluidos"
+          }
+        }
+      }
+    },
+    "comparison": {
+      "heading": "¿No sabes cuál es la opción adecuada para ti?",
+      "table": {
+        "head1": "Característica",
+        "head2": "GROWTH",
+        "head3": "DOMINANCE",
+        "head4": "EMPIRE",
+        "button": "¿Sigues con dudas? Escríbenos y te recomendaremos la opción adecuada",
+        "rows": {
+          "row1": {
+            "feature": "Precio inicial",
+            "growth": "₦650,000",
+            "dominance": "₦950,000",
+            "empire": "₦2,500,000"
+          },
+          "row2": {
+            "feature": "Sitio web",
+            "growth": "Página de aterrizaje + embudo",
+            "dominance": "Sitio completo + SEO + blog",
+            "empire": "Solución empresarial + sistemas personalizados"
+          },
+          "row3": {
+            "feature": "IA / automatización",
+            "growth": "—",
+            "dominance": "Reservas con IA + seguimiento",
+            "empire": "IA + voz + automatización de ventas"
+          },
+          "row4": {
+            "feature": "Gestión de anuncios",
+            "growth": "14 días",
+            "dominance": "30 días",
+            "empire": "90 días"
+          },
+          "row5": {
+            "feature": "Objetivo de clientes potenciales",
+            "growth": "5",
+            "dominance": "10",
+            "empire": "50"
+          },
+          "row6": {
+            "feature": "Plazo de entrega",
+            "growth": "10 días",
+            "dominance": "14 días",
+            "empire": "30 días"
+          },
+          "row7": {
+            "feature": "Soporte",
+            "growth": "Desde el primer día",
+            "dominance": "90 días",
+            "empire": "Prioridad durante un año"
+          },
+          "row8": {
+            "feature": "Ideal para",
+            "growth": "Empresas listas para crecer",
+            "dominance": "Empresas listas para liderar",
+            "empire": "Marcas empresariales"
+          }
+        }
+      }
+    },
+    "faq": {
+      "heading": "Preguntas frecuentes",
+      "questions": {
+        "q1": {
+          "q": "¿Pago mensualmente o una sola vez?",
+          "a": "Es un pago único por el proyecto. Pagas el 50 % al comenzar y el 50 % al entregar. GROWTH incluye un plan de mantenimiento opcional de ₦50.000 al mes después del lanzamiento, si deseas actualizaciones continuas."
+        },
+        "q2": {
+          "q": "¿Está garantizado el «objetivo de clientes potenciales»?",
+          "a": "Gestionamos tu presupuesto publicitario, la segmentación y las creatividades para alcanzar ese objetivo, y seguimos optimizando hasta hacer todo lo posible por conseguirlo. Los resultados dependen de tu oferta y tu mercado; por eso aclaramos que es una meta por la que trabajamos intensamente, no una promesa independiente de tu negocio."
+        },
+        "q3": {
+          "q": "¿Puedo pasar de GROWTH a DOMINANCE o EMPIRE más adelante?",
+          "a": "Sí. El importe que ya hayas pagado se descontará del coste de la mejora."
+        },
+        "q4": {
+          "q": "¿Con qué rapidez podemos empezar?",
+          "a": "Los proyectos comienzan en un plazo de 2 a 3 días tras recibir tu depósito del 50 %."
+        },
+        "q5": {
+          "q": "¿Qué pasa si no estoy satisfecho con el resultado?",
+          "a": "Incluimos rondas de revisión durante el desarrollo, para que revises y apruebes el trabajo paso a paso, sin sorpresas al final."
+        }
+      }
+    },
+    "closing": {
+      "heading": "¿Listo para dominar tu mercado?",
+      "sub": "Deja de pagar por un sitio web que solo «se ve bonito». Construyamos un sistema que te consiga clientes.",
+      "btn1": " Reserva tu auditoría gratuita",
+      "btn2": "15 minutos. Sin presión. Te diremos exactamente qué debes corregir."
+    }
+  },
+  "privacy": {
+    "heading": "Política de privacidad",
+    "lastu": "Última actualización:",
+    "date": "31 de agosto de 2026",
+    "c": "Empresa:",
+    "c1": " Lines Of Codes Technologies Limited — RC:9689529",
+    "introh": "1. Introducción",
+    "introb": " Lines Of Codes Technologies Limited («nosotros») respeta tu privacidad. Esta política explica cómo recopilamos, utilizamos y protegemos tus datos personales cuando interactúas con nosotros a través de nuestro sitio web, la API de WhatsApp Business o nuestro asistente de IA «Ayo».",
+    "datah": "2. Recopilación de datos",
+    "datas": "Recopilamos únicamente los datos necesarios para atenderte:",
+    "datab1": "Datos de contacto:",
+    "datab1a": "Nombre, número de teléfono, correo electrónico y número de WhatsApp",
+    "datab2": "Datos empresariales:",
+    "datab2a": "Nombre de la empresa, sitio web, sector y requisitos del proyecto",
+    "datab3": "Datos técnicos:",
+    "datab3a": "Dirección IP, información del dispositivo y registros de chats de WhatsApp/sitio web",
+    "howh": "3. Cómo utilizamos tus datos",
+    "hows": "Utilizamos tus datos para:",
+    "howb1": "Responder consultas y definir el alcance de los proyectos",
+    "howb2": "Prestar servicios: desarrollo web, automatización con IA, anuncios, datos y ciberseguridad",
+    "howb3": "Enviar facturas y enlaces de pago",
+    "howb4": "Mejorar nuestro asistente de IA «Ayo» y la experiencia del cliente",
+    "howb5": "Cumplir las obligaciones legales",
+    "dsh": "4. Almacenamiento y seguridad de los datos",
+    "dsb": " Los datos de cada cliente se almacenan en un espacio aislado de tickets y flujos de trabajo. Nunca se comparten datos entre clientes. La información sensible, como claves API y contraseñas, se recopila únicamente mediante enlaces seguros de envío único, nunca por chat.",
+    "dsah": "5. Intercambio de datos",
+    "dsas": "No vendemos tus datos. Podemos compartirlos con:",
+    "dsab1": "Meta/WhatsApp:",
+    "dsab1a": "Como parte del uso de la API de WhatsApp Business",
+    "dsab2": "Procesadores de pago:",
+    "dsab2a": "Paystack y Payoneer para la facturación",
+    "dsab3": "Nuestros especialistas:",
+    "dsab3a": "Solo cuando sea necesario para tu proyecto",
+    "righth": "6. Tus derechos",
+    "rightb": " Según la legislación de la NDPC, tienes derecho a acceder a tus datos, corregirlos o eliminarlos. Para eliminarlos, consulta nuestras ",
+    "rightl": "Instrucciones para eliminar datos",
+    "datarh": "7. Conservación de datos",
+    "datarb": "Conservamos tus datos durante nuestra relación comercial y durante dos años adicionales por motivos legales y contables, salvo que solicites su eliminación.",
+    "contacth": "8. Contacto",
+    "contactb": "Si tienes preguntas sobre esta política, ponte en contacto con nosotros: ",
+    "contacteH": "Correo electrónico:",
+    "contacteL": "hello@lines-of-code.com.ng",
+    "contactwH": "Sitio web:",
+    "contactwL": "www.lines-of-code.com.ng",
+    "contacta": "Dirección: Lagos, Nigeria"
+  },
+  "dataDeletion": {
+    "pageTitle": "Eliminación de datos | Lines of Code Technologies",
+    "heading": "Instrucciones para eliminar datos",
+    "lastUpdatedLabel": "Última actualización:",
+    "lastUpdated": "26 de agosto de 2026",
+    "companyLabel": "Empresa:",
+    "companyName": "Lines Of Codes Technologies Limited",
+    "requestHeading": "Solicita la eliminación de tus datos personales",
+    "requestIntro": "Si quieres que eliminemos los datos personales que recopilamos a través de nuestro sitio web, la API de WhatsApp Business o la API de conversiones de Meta, sigue los pasos que se indican a continuación.",
+    "howHeading": "Cómo solicitar la eliminación",
+    "sendBefore": "Envía un correo electrónico a",
+    "sendAfter": "con el asunto:",
+    "pleaseInclude": "Incluye lo siguiente:",
+    "includeList": [
+      "Tu número de teléfono, dirección de correo electrónico o número de WhatsApp",
+      "El nombre de la empresa con la que interactuaste",
+      "Cualquier dato que nos ayude a localizar tu información en nuestro sistema"
+    ],
+    "nextHeading": "Qué ocurre después",
+    "steps": [
+      {
+        "label": "Paso 1:",
+        "text": "Confirmaremos la recepción de tu solicitud en un plazo de 5 días hábiles"
+      },
+      {
+        "label": "Paso 2:",
+        "text": "Eliminaremos tus datos de los sistemas bajo nuestro control"
+      },
+      {
+        "label": "Paso 3:",
+        "text": "Te enviaremos un correo electrónico de confirmación en un plazo de 14 días hábiles"
+      }
+    ],
+    "notesHeading": "Notas importantes",
+    "notes": [
+      "Actuamos como proveedores de servicios técnicos para nuestros clientes. Si también proporcionaste datos directamente a un cliente, ponte en contacto con esa empresa para solicitar que los elimine de sus sistemas.",
+      "Los datos procesados por Meta/WhatsApp están sujetos a las propias políticas de datos de Meta.",
+      "Podemos conservar ciertos datos cuando la ley lo exija, como registros financieros para fines fiscales."
+    ],
+    "contactHeading": "Contacto",
+    "emailLabel": "Correo electrónico:",
+    "websiteLabel": "Sitio web:",
+    "location": "Lagos, Nigeria"
+  },
+  "footer": {
+    "privacy": "Política de privacidad",
+    "dd": "Eliminación de datos",
+    "rights": "Todos los derechos reservados."
+  }
+}

@@ -6,18 +6,27 @@ import useReveal from "./Hooks/useReveal";
 import deploy from "../assets/deploy.jpg";
 import coding from "../assets/coding.jpg";
 import figma from "../assets/figma.jpg";
-
-const slides = [
-  {
-    caption: "Where every project starts — whiteboarding the plan",
-    image: figma,
-  },
-  { caption: "Design in progress", image: coding },
-  { caption: "Deploy day", image: deploy },
-];
+import useTitles from "../components/Hooks/useTitles";
+import { useLocale } from "../i18n/LocaleProvider";
 
 function AboutCarousel() {
   const [active, setActive] = useState(0);
+  const { t } = useLocale();
+
+  const slides = [
+    {
+      caption: t("about.slides.slide1.caption"),
+      image: figma,
+    },
+    {
+      caption: t("about.slides.slide2.caption"),
+      image: coding,
+    },
+    {
+      caption: t("about.slides.slide3.caption"),
+      image: deploy,
+    },
+  ];
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -67,6 +76,8 @@ function RevealBlock({ children, delay = 0, threshold = 0.3 }) {
 }
 
 function About() {
+  const { t } = useLocale();
+  useTitles("About Us | Lines Of Code Technologies");
   return (
     <section id="about" className="about">
       <p className="about-eyebrow">ABOUT US</p>
@@ -75,33 +86,16 @@ function About() {
 
       <RevealBlock delay={0.1}>
         <div className="about-block">
-          <h2 className="about-heading">The year we launched</h2>
-          <p className="about-text">
-            We opened our doors with two laptops, a shared Google Drive, and no
-            clients. The first few months were rough — we lost our first big
-            pitch because we quoted a price without fully scoping the work, and
-            had to eat the difference to finish the project right. We also
-            learned the hard way that "we'll figure out hosting later" is not a
-            plan, after a client's launch got delayed a week over a DNS mix-up.
-          </p>
-          <p className="about-text">
-            Every one of those mistakes is baked into how we work now — which is
-            a big part of why we quote carefully, test everything before
-            handoff, and never leave a client guessing what happens next.
-          </p>
+          <h2 className="about-heading">{t("about.theyear.head")}</h2>
+          <p className="about-text">{t("about.theyear.body1")}</p>
+          <p className="about-text">{t("about.theyear.body2")}</p>
         </div>
       </RevealBlock>
 
       <RevealBlock delay={0.2}>
         <div className="about-block">
-          <h2 className="about-heading">Why we started this</h2>
-          <p className="about-text">
-            We kept seeing the same thing: good businesses with beautiful
-            products, invisible online. Not because they didn't deserve
-            customers — because nobody had built them a website that actually
-            worked as hard as they did. We started Loct to fix that gap, one
-            business at a time.
-          </p>
+          <h2 className="about-heading">{t("about.why.head")}</h2>
+          <p className="about-text">{t("about.why.body")}</p>
         </div>
       </RevealBlock>
 

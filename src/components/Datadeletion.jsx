@@ -2,86 +2,76 @@
 import React from "react";
 import "../styles/legal.css";
 import useTitles from "./Hooks/useTitles";
+import { useLocale } from "../i18n/LocaleProvider";
+
+// Not translated: these must stay identical in every language
+const EMAIL = "hello@lines-of-code.com.ng";
+const WEBSITE = "www.lines-of-code.com.ng";
+const RC = "RC: 9689529";
+const SUBJECT = "Data Deletion Request";
 
 function Datadeletion() {
-  useTitles("Data Deletion | Lines of Code Technologies");
+  const { t, tRaw } = useLocale();
+  useTitles(t("dataDeletion.pageTitle"));
+
+  const list = (key) => {
+    const value = tRaw(key);
+    return Array.isArray(value) ? value : [];
+  };
 
   return (
     <div className="legal-page">
-      <h1>Data Deletion Instructions</h1>
+      <h1>{t("dataDeletion.heading")}</h1>
       <p className="legal-meta">
-        <strong>Last Updated:</strong> August 26, 2026
+        <strong>{t("dataDeletion.lastUpdatedLabel")}</strong>{" "}
+        {t("dataDeletion.lastUpdated")}
       </p>
       <p className="legal-meta">
-        <strong>Company:</strong> Lines Of Codes Technologies Limited — RC:
-        9689529
+        <strong>{t("dataDeletion.companyLabel")}</strong>{" "}
+        {t("dataDeletion.companyName")} — {RC}
       </p>
 
-      <h2>Request Deletion of Your Personal Data</h2>
-      <p>
-        If you want us to delete the personal data we collected about you
-        through our website, WhatsApp Business API, or Meta Conversions API,
-        follow the steps below.
-      </p>
+      <h2>{t("dataDeletion.requestHeading")}</h2>
+      <p>{t("dataDeletion.requestIntro")}</p>
 
-      <h2>How to Request Deletion</h2>
+      <h2>{t("dataDeletion.howHeading")}</h2>
       <p>
-        Send an email to <strong>hello@lines-of-code.com.ng</strong> with the
-        subject line: <strong>"Data Deletion Request"</strong>
+        {t("dataDeletion.sendBefore")} <strong>{EMAIL}</strong>{" "}
+        {t("dataDeletion.sendAfter")} <strong>"{SUBJECT}"</strong>
       </p>
-      <p>Please include:</p>
+      <p>{t("dataDeletion.pleaseInclude")}</p>
       <ol>
-        <li>Your phone number, email address, or WhatsApp number</li>
-        <li>The name of the business you interacted with</li>
-        <li>Any details that can help us locate your data in our system</li>
+        {list("dataDeletion.includeList").map((item) => (
+          <li key={item}>{item}</li>
+        ))}
       </ol>
 
-      <h2>What Happens Next</h2>
+      <h2>{t("dataDeletion.nextHeading")}</h2>
       <ul>
-        <li>
-          <strong>Step 1:</strong> We will acknowledge your request within 5
-          business days
-        </li>
-        <li>
-          <strong>Step 2:</strong> We will delete your data from systems under
-          our control
-        </li>
-        <li>
-          <strong>Step 3:</strong> We will send you a confirmation email within
-          14 business days
-        </li>
+        {list("dataDeletion.steps").map((step) => (
+          <li key={step.label}>
+            <strong>{step.label}</strong> {step.text}
+          </li>
+        ))}
       </ul>
 
-      <h2>Important Notes</h2>
+      <h2>{t("dataDeletion.notesHeading")}</h2>
       <ul>
-        <li>
-          We act as a technical service provider for our clients. If you also
-          gave data directly to a client, please contact that business to
-          request deletion from their systems.
-        </li>
-        <li>
-          Data processed by Meta/WhatsApp is subject to Meta's own data
-          policies.
-        </li>
-        <li>
-          We may retain certain data if required by law, such as financial
-          records for tax purposes.
-        </li>
+        {list("dataDeletion.notes").map((note) => (
+          <li key={note}>{note}</li>
+        ))}
       </ul>
 
-      <h2>Contact</h2>
+      <h2>{t("dataDeletion.contactHeading")}</h2>
       <p>
-        Lines Of Codes Technologies Limited
+        {t("dataDeletion.companyName")}
         <br />
-        Email:{" "}
-        <a href="mailto:hello@lines-of-code.com.ng">
-          hello@lines-of-code.com.ng
-        </a>
+        {t("dataDeletion.emailLabel")} <a href={`mailto:${EMAIL}`}>{EMAIL}</a>
         <br />
-        Website:{" "}
-        <a href="https://www.lines-of-code.com.ng">www.lines-of-code.com.ng</a>
+        {t("dataDeletion.websiteLabel")}{" "}
+        <a href={`https://${WEBSITE}`}>{WEBSITE}</a>
         <br />
-        Lagos, Nigeria
+        {t("dataDeletion.location")}
       </p>
     </div>
   );

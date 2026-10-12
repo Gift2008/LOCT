@@ -1,0 +1,806 @@
+{
+  "nav": {
+    "services": "Services",
+    "process": "The Process",
+    "portfolio": "Portfolio",
+    "testimonials": "Testimonials",
+    "contact": "Contact",
+    "about": "About Us",
+    "blog": "Blog",
+    "pricing": "Pricing",
+    "cta": "Book Your Free Call",
+    "fields": { "webDesign": "Web Design" }
+  },
+  "hero": {
+    "headline": "Got an Idea?",
+    "firstsubheadline": "You imagine it. We code it.",
+    "secondsubhead": "Websites and AI Systems that actually do the work.",
+    "subhead": " Lines of Code Technologies builds high-performance websites and practical AI tools that help growing businesses scale.",
+    "ctaPrimary": "Start your project today",
+    "ctaSecondary": "See our work →"
+  },
+  "proof": {
+    "Website Speed": "Website Speed",
+    "Client satisfaction": "Client satisfaction",
+    "Days to launch": "Days to launch",
+    "Support response": "Support response"
+  },
+  "services": {
+    "eyebrow": "WHAT WE DO",
+    "heading": "Everything your website needs",
+    "page": {
+      "back": "← All services",
+      "whatYouGet": "What you get",
+      "idealFor": "Ideal for",
+      "bookAudit": "Book Free Audit",
+      "whatsapp": "Chat Us on WhatsApp"
+    },
+    "items": {
+      "ai-integration": {
+        "title": "AI Integration",
+        "summary": "Integrating AI that works just for you. Increasing sales and site visits.",
+        "tagline": "AI that works for you, not against your workflow.",
+        "description": "We integrate AI tools directly into your website or business systems — chatbots that actually understand your business, automated follow-ups, and smart recommendations that turn browsers into buyers.",
+        "features": [
+          "Custom AI chatbot trained on your business",
+          "Automated lead follow-up, 24/7",
+          "Smart product/service recommendations",
+          "Integration with WhatsApp, email, or your existing tools"
+        ],
+        "idealFor": "Businesses getting traffic but losing leads to slow response times."
+      },
+      "web-development": {
+        "title": "Web Development",
+        "summary": "Your design brought to life — fast, responsive, and built to scale, including upgrades and ongoing maintenance.",
+        "tagline": "Complete web development, upgrades, and maintenance solutions.",
+        "description": "We take your design and turn it into a real, working website — fast-loading and mobile-responsive. As part of our web development ecosystem, we also offer targeted upgrades to modernize outdated sites and reliable ongoing maintenance to keep everything secure and running smoothly.",
+        "features": [
+          "Fully responsive, mobile-first build",
+          "Fast load times, optimized performance",
+          "Clean, scalable code — no shortcuts",
+          "Built to integrate with payments, CRMs, and more"
+        ],
+        "idealFor": "Businesses looking for a complete end-to-end web partner for building, upgrading, and maintaining their online presence.",
+        "subServices": {
+          "website-upgrades": {
+            "title": "Website Upgrades",
+            "summary": "Modernize an outdated site — new features, better performance, refreshed design.",
+            "description": "An outdated site doesn't always need a full rebuild. We audit what's slowing you down and upgrade exactly what needs it.",
+            "features": [
+              "Full site audit (speed, design, mobile experience)",
+              "Targeted redesign of weak sections",
+              "Performance and SEO improvements",
+              "New features added without breaking what works"
+            ]
+          },
+          "web-maintenance": {
+            "title": "Web Maintenance",
+            "summary": "Ongoing updates, monitoring, and support so your site stays fast, secure, and current.",
+            "description": "We monitor, update, and fix issues before they cost you a sale.",
+            "features": [
+              "Regular updates and security patches",
+              "Uptime and performance monitoring",
+              "Priority bug fixes",
+              "Monthly health report"
+            ]
+          }
+        }
+      },
+      "website-upgrades": {
+        "title": "Website Upgrades",
+        "summary": "Modernize an outdated site — new features, better performance, refreshed design.",
+        "tagline": "Modernize what you already have.",
+        "description": "An outdated site doesn't always need a full rebuild. We audit what's slowing you down — performance, design, missing features — and upgrade exactly what needs it.",
+        "features": [
+          "Full site audit (speed, design, mobile experience)",
+          "Targeted redesign of weak sections",
+          "Performance and SEO improvements",
+          "New features added without breaking what works"
+        ],
+        "idealFor": "Businesses with an existing site that's starting to feel behind."
+      },
+      "web-maintenance": {
+        "title": "Web Maintenance",
+        "summary": "Ongoing updates, monitoring, and support so your site stays fast, secure, and current.",
+        "tagline": "Your site, looked after — so you don't have to think about it.",
+        "description": "Websites break quietly — a plugin goes stale, a form stops sending, nobody notices until a customer complains. We monitor, update, and fix issues before they cost you a sale.",
+        "features": [
+          "Regular updates and security patches",
+          "Uptime and performance monitoring",
+          "Priority bug fixes",
+          "Monthly health report"
+        ],
+        "idealFor": "Businesses that want a site that just keeps working, quietly."
+      },
+      "web-design": {
+        "title": "Web Design",
+        "summary": "Custom Figma designs built around your brand — not a template with your logo dropped in.",
+        "tagline": "Custom design built around your brand.",
+        "description": "Not a template with your logo dropped in — we design around your actual brand, your actual customers, and what you're trying to sell, starting in Figma before a line of code is written.",
+        "features": [
+          "Custom Figma design, not a theme",
+          "Built around your brand identity",
+          "You review and approve every screen",
+          "Designed to convert, not just to look nice"
+        ],
+        "idealFor": "Businesses that want a site that looks and feels like them, not a template."
+      },
+      "product-design": {
+        "title": "Product Design (UI/UX)",
+        "summary": "App and software interfaces people actually enjoy using — researched, wireframed, and polished.",
+        "tagline": "Interfaces people actually enjoy using.",
+        "description": "For apps and software, good design isn't decoration — it's whether people can actually use the thing. We research, wireframe, and design interfaces that feel obvious to use.",
+        "features": [
+          "User research and flow mapping",
+          "Wireframes before high-fidelity design",
+          "Full UI design system (reusable components)",
+          "Usability-tested before handoff"
+        ],
+        "idealFor": "Startups and teams building an app or software product from scratch."
+      },
+      "data-analysis": {
+        "title": "Data Analysis",
+        "summary": "Turning your raw business data into dashboards and insights you can actually act on.",
+        "tagline": "Turn your raw data into decisions.",
+        "description": "Most businesses collect data and never use it. We build dashboards and reports that turn your numbers into clear, actionable insight — what's working, what's not, and what to do next.",
+        "features": [
+          "Custom dashboards (sales, traffic, customer behavior)",
+          "Monthly or weekly reporting",
+          "Clear insights, not just raw charts",
+          "Integration with your existing tools (Google Analytics, CRM, etc.)"
+        ],
+        "idealFor": "Businesses sitting on data they don't know how to use."
+      },
+      "branding-design": {
+        "title": "Branding & Graphic Design",
+        "summary": "Logos, visual identity, and design systems that make your business instantly recognizable.",
+        "tagline": "Make your business instantly recognizable.",
+        "description": "Your logo, colors, and visual identity are often someone's first impression of your business. We build a consistent design system so you look credible everywhere — your site, your socials, your invoices.",
+        "features": [
+          "Logo design and brand identity",
+          "Full design system (colors, type, usage rules)",
+          "Social media templates",
+          "Business collateral (invoices, cards, etc.)"
+        ],
+        "idealFor": "New businesses or anyone whose branding feels inconsistent across platforms."
+      },
+      "cyber-security": {
+        "title": "Cybersecurity",
+        "summary": "Protecting your site and systems from the threats most businesses never see coming.",
+        "tagline": "Protection from threats most businesses never see.",
+        "description": "Small businesses are targeted precisely because they're assumed to have weak security. We audit your site and systems, close the gaps, and set up ongoing monitoring.",
+        "features": [
+          "Full security audit",
+          "Vulnerability patching",
+          "SSL, firewall, and access control setup",
+          "Ongoing threat monitoring"
+        ],
+        "idealFor": "Any business handling customer data, payments, or sensitive information."
+      },
+      "qa-testing": {
+        "title": "QA Testing as a Service",
+        "summary": "Catching bugs before your customers do — manual and automated testing for your product.",
+        "tagline": "Catch bugs before your customers do.",
+        "description": "A bug your customer finds is a customer you've probably lost. We test your site or app thoroughly — manually and with automation — before and after every release.",
+        "features": [
+          "Manual and automated testing",
+          "Cross-browser and cross-device testing",
+          "Bug tracking and reporting",
+          "Pre-launch and post-release QA cycles"
+        ],
+        "idealFor": "Teams shipping regularly who need a safety net before things go live."
+      },
+      "cloud-devops": {
+        "title": "Cloud / DevOps & Infrastructure",
+        "summary": "Reliable, scalable infrastructure so your product stays up and deploys don't break things.",
+        "tagline": "Infrastructure that stays up and doesn't break deploys.",
+        "description": "Behind every reliable product is infrastructure nobody thinks about until it fails. We set up and manage your cloud hosting, deployment pipelines, and scaling so your product stays online.",
+        "features": [
+          "Cloud infrastructure setup (AWS, GCP, etc.)",
+          "CI/CD pipelines for safe, fast deploys",
+          "Monitoring and auto-scaling",
+          "Backup and disaster recovery planning"
+        ],
+        "idealFor": "Growing products that can't afford downtime."
+      },
+      "app-development": {
+        "title": "App Development",
+        "summary": "Native and cross-platform apps built to perform as well as they look.",
+        "tagline": "Apps built to perform as well as they look.",
+        "description": "Native or cross-platform, we build mobile apps from concept to launch — designed well, built properly, and tested before it ever reaches an app store.",
+        "features": [
+          "iOS, Android, or cross-platform build",
+          "Built from your design or designed from scratch",
+          "App store submission support",
+          "Post-launch support and updates"
+        ],
+        "idealFor": "Businesses ready to take their product mobile."
+      },
+      "ads": {
+        "title": "Ads",
+        "summary": "Facebook, Google, and Instagram campaigns that bring in leads, not just impressions.",
+        "tagline": "Campaigns that bring leads, not just impressions.",
+        "description": "Running ads without a strategy burns money fast. We handle targeting, creative, and copy across Facebook, Instagram, and Google — optimized toward actual leads, not vanity metrics.",
+        "features": [
+          "Facebook, Instagram & Google Ads management",
+          "Ad creative and copywriting",
+          "Audience targeting and optimization",
+          "Weekly performance reporting"
+        ],
+        "idealFor": "Businesses with a working offer that just needs more eyes on it."
+      }
+    }
+  },
+  "portfolio": {
+    "eyebrow": "OUR WORK",
+    "heading": "Some of our recent projects"
+  },
+  "process": {
+    "eyebrow": "HOW WE WORK",
+    "heading": "From idea to live site"
+  },
+  "testimonials": {
+    "heading": "WHAT OUR CLIENTS SAY",
+    "testimonial1": {
+      "quote": "Loct took a vague idea and turned it into a site that actually feels like us. The whole process was smooth from the first call to launch.",
+      "name": "Amara Okafor",
+      "role": "Founder, Solene Skincare"
+    },
+    "testimonial2": {
+      "quote": "Our old site was embarrassing. What they rebuilt loads fast, looks sharp, and customers actually compliment it now.",
+      "name": "Daniel Reyes",
+      "role": "Owner, Ridgeline Fitness"
+    },
+    "testimonial3": {
+      "quote": "Working with Lines of Code Technologies was seamless. They took our vision and turned it into a modern, responsive website for Frankey Powa Technologies. Great communication, great design, great results. LOCT is the team to call when you need your business online the right way",
+      "role": "CEO, Frankey Powa Technologies",
+      "name": "Franklin Mbilitem"
+    }
+  },
+  "steps": {
+    "step1": {
+      "number": "01",
+      "title": "Discovery",
+      "description": "We start by understanding your business, goals, and target audience. This helps us create a website that meets your needs and exceeds your expectations."
+    },
+    "step2": {
+      "number": "02",
+      "title": "Design",
+      "description": "Our design team creates a visually appealing and user-friendly website that reflects your brand identity and engages your audience."
+    },
+    "step3": {
+      "number": "03",
+      "title": "Development",
+      "description": "Our developers bring the design to life, ensuring that the website is responsive, fast, and optimized for search engines."
+    },
+    "step4": {
+      "number": "04",
+      "title": "Launch",
+      "description": "Once the website is complete, we launch it and provide ongoing support to ensure it continues to perform well."
+    }
+  },
+  "contact": {
+    "eyebrow": "GET IN TOUCH",
+    "heading": "Let's build your site",
+    "name": {
+      "name": "Name",
+      "placeholder": "Enter your name"
+    },
+    "email": {
+      "name": "Email",
+      "placeholder": "you@example.com"
+    },
+    "service": {
+      "name": "What do you need?",
+      "select": "Select a service",
+      "option1": "Web Design",
+      "option2": "Web Development",
+      "option3": "Website Upgrade",
+      "option4": "Web Maintenance",
+      "option5": "Other",
+      "placeholder": "Select one"
+    },
+    "message": {
+      "name": "Message",
+      "placeholder": "Tell us about your project..."
+    },
+
+    "submit": "Send message",
+    "sending": "Sending...",
+    "success": "Thanks — we'll be in touch soon.",
+    "error": "Please fill in all required fields."
+  },
+  "about": {
+    "slides": {
+      "slide1": {
+        "caption": "Where every project starts — whiteboarding the plan"
+      },
+      "slide2": {
+        "caption": "Design in progress"
+      },
+      "slide3": {
+        "caption": "Deploy day"
+      }
+    },
+    "theyear": {
+      "head": "The year we launched",
+      "body1": " We opened our doors with two laptops, a shared Google Drive, and noclients. The first few months were rough — we lost our first big  pitch because we quoted a price without fully scoping the work, and  had to eat the difference to finish the project right. We alsolearned the hard way that (we'll figure out hosting later)  is not a  plan, after a client's launch got delayed a week over a DNS mix-up.",
+      "body2": " Every one of those mistakes is baked into how we work now — which is a big part of why we quote carefully, test everything before handoff, and never leave a client guessing what happens next."
+    },
+    "why": {
+      "head": "Why we started this",
+      "body": " We kept seeing the same thing: good businesses with beautiful products, invisible online. Not because they didn't deserve customers — because nobody had built them a website that actually worked as hard as they did. We started Loct to fix that gap, one   business at a time."
+    },
+    "meetButton": {
+      "text": "Meet the LOCT Team"
+    }
+  },
+  "team": {
+    "founder": {
+      "name": "Austine Mbilitem",
+      "role": "Founder",
+      "initials": "AM",
+      "bio": "Leads strategy and client relationships at Loct — makes sure every build actually solves the business problem behind the request, not just the surface ask. Started Loct after one too many conversations with business owners who'd been burned by agencies that disappeared after launch."
+    },
+    "coFounder": {
+      "name": "Gift Ifeanyi",
+      "role": "Co-founder / Tech Lead",
+      "initials": "GI",
+
+      "bio": "Leads design and development — turns strategy into fast, functional, real websites. Obsessive about the details most people never notice: load times, mobile quirks, the small animations that make a site feel alive."
+    }
+  },
+  "blog": {
+    "eyebrow": "RESOURCES",
+    "heading": "Straight talk on websites that actually work",
+    "readMore": "Read more →",
+    "backToPosts": "← Back to all posts",
+    "illustrative": "Illustrative example",
+    "posts": {
+      "website-pricing-2026": {
+        "title": "Website Pricing in Nigeria 2026: What Should You Really Pay?",
+        "date": "July 2026",
+        "readTime": "4 min read",
+        "excerpt": "If you've asked 3 developers for a website quote in Lagos, you've probably gotten 3 wildly different prices. Here's why.",
+        "ctaLabel": "Chat us to see which one fits your business",
+        "body": [
+          {
+            "type": "p",
+            "text": "If you've asked 3 developers for a website quote in Lagos, you've probably gotten 3 wildly different prices. ₦80k, ₦500k, ₦1.5M. Why?"
+          },
+          {
+            "type": "h4",
+            "text": "The 3 Types of Websites in Nigeria Right Now"
+          },
+          {
+            "type": "ul",
+            "items": [
+              "₦50k – ₦150k: The \"Brochure\" Site — Looks fine. No strategy. No leads. It's just online.",
+              "₦200k – ₦700k: The \"Growth\" Site — Mobile, fast, WhatsApp chat, SEO basics. Built to get you customers.",
+              "₦800k – ₦3M: The \"Dominance\" Site — Full sales machine. SEO blog, ads, booking system, analytics. This pays for itself."
+            ]
+          },
+          { "type": "h4", "text": "So what should YOU pay for?" },
+          {
+            "type": "p",
+            "text": "Ask this: \"Will this website bring me customers in the next 90 days?\" If the answer is no, it's too cheap."
+          },
+          {
+            "type": "p",
+            "text": "At LOC, we build three packages: GROWTH (₦650,000), DOMINANCE (₦950,000) and EMPIRE (₦2,500,000). Not ₦80k websites that do nothing."
+          }
+        ]
+      },
+      "whatsapp-widget-case-study": {
+        "title": "How One WhatsApp Chat Widget Got Our Client 13 Leads in 8 Days",
+        "date": "July 2026",
+        "readTime": "3 min read",
+        "excerpt": "A skincare brand in Lagos had 200 weekly visitors and 0 sales. Here's the one change that fixed it.",
+        "ctaLabel": "Get WhatsApp Chat Setup for Free",
+        "body": [
+          {
+            "type": "p",
+            "text": "Client: A skincare brand in Lagos. Problem: 200 people visited their site weekly. 0 sales."
+          },
+          { "type": "h4", "text": "What was wrong?" },
+          {
+            "type": "p",
+            "text": "People had questions: \"Do you deliver to Abuja?\" \"Is this for oily skin?\" But there was no way to ask. So they left."
+          },
+          { "type": "h4", "text": "What we did in 10 minutes" },
+          {
+            "type": "p",
+            "text": "We installed a chat widget + connected WhatsApp. Added 1 line: \"Hi 👋 Quick question? We reply in 2 mins\""
+          },
+          { "type": "h4", "text": "The Result" },
+          {
+            "type": "ul",
+            "items": [
+              "Day 1–3: 4 chats. 2 became customers",
+              "Day 4–7: 11 total chats. 5 became customers",
+              "Revenue: ₦127,000 from 1 free tool"
+            ]
+          },
+          {
+            "type": "p",
+            "text": "Lesson: Your website isn't a billboard. It's a sales rep. If no one can talk to you, you're losing money."
+          }
+        ]
+      },
+      "why-nigerian-websites-dont-sell": {
+        "title": "Why Most Nigerian Business Websites Don't Sell in 2026",
+        "date": "July 2026",
+        "readTime": "5 min read",
+        "excerpt": "You spent ₦200k on a website. It's beautiful. But crickets. Here's why.",
+        "ctaLabel": "Fix My Website — Book Free Audit",
+        "body": [
+          {
+            "type": "p",
+            "text": "You spent ₦200k on a website. It's beautiful. But crickets. Here's why:"
+          },
+          { "type": "h4", "text": "Mistake 1: No Offer" },
+          {
+            "type": "p",
+            "text": "\"Welcome to our website\" — that's not an offer. Fix: \"Book Free 15-min Website Audit\" or \"Get 10% off this week.\""
+          },
+          { "type": "h4", "text": "Mistake 2: No Way to Talk to You" },
+          {
+            "type": "p",
+            "text": "Contact form that goes to spam. No WhatsApp. Fix: a live chat widget. 80% of Nigerians will chat before they call."
+          },
+          { "type": "h4", "text": "Mistake 3: No Proof" },
+          {
+            "type": "p",
+            "text": "No testimonials, no portfolio, no team photo. Fix: Add 2 case studies + 3 client logos. Trust = Sales."
+          },
+          { "type": "h4", "text": "Mistake 4: Slow + Not on Mobile" },
+          {
+            "type": "p",
+            "text": "If it loads in 6 seconds, 50% of people leave. Fix: Test your site speed. Use a CDN. Compress images."
+          },
+          { "type": "h4", "text": "The LOC Fix" },
+          {
+            "type": "p",
+            "text": "We check all 4 for free. In 15 minutes we'll tell you exactly what's killing your sales."
+          }
+        ]
+      }
+    }
+  },
+  "pricing": {
+    "eyebrow": "PRICING",
+    "heading": "One Clear Price. Real Results.",
+    "sub1": "No hidden fees. 50% to start, 50% on delivery",
+    "sub2": " We build systems that sell for you 24/7.",
+    "btn1": "  Book Free 15-min Audit",
+    "btn2": "   Chat Us on WhatsApp",
+    "pricingCards": {
+      "card1": {
+        "tier": "GROWTH",
+        "price": "₦650,000",
+        "tagline": "Your next level starts here — for businesses ready to stop guessing and start growing.",
+        "result": "Grow beyond the ordinary — with a system that works while you sleep.",
+
+        "features": {
+          "category": "High-Converting Website",
+          "items": {
+            "item1": "Landing Page + Contact Funnel",
+            "item2": "Built to turn visitors into leads",
+            "item3": "Clean, fast, mobile-optimized"
+          }
+        },
+        "features2": {
+          "category": "Quality Ads",
+          "items": {
+            "item1": "14 Days Facebook + Google Ads Setup",
+            "item2": "5 Lead Target",
+            "item3": "Proven to drive 220%+ ad performance growth"
+          }
+        },
+
+        "features3": {
+          "category": "Simple Conversion Path",
+          "items": {
+            "item1": "Visitor → Lead, no wasted clicks",
+            "item2": "Every step designed to book you calls",
+            "item3": "No complexity, no clutter — just results"
+          }
+        },
+        "features4": {
+          "category": "Fast Delivery",
+          "items": {
+            "item1": "Delivered in 10 Days",
+            "item2": "+₦50,000/month maintenance (optional)",
+            "item3": "Support included from day one"
+          }
+        }
+      },
+
+      "card2": {
+        "tier": "DOMINANCE",
+        "badge": "⭐ Most Popular",
+        "price": "₦950,000",
+        "tagline": "For businesses that want to OWN their market.",
+        "result": "Become #1 in your industry.",
+
+        "features": {
+          "category": "Quality Website",
+          "items": {
+            "item1": "SEO + Blog + Lead Funnels",
+            "item2": "Paystack + WhatsApp + Mobile optimized",
+            "item3": "Built to convert visitors to customers"
+          }
+        },
+        "features2": {
+          "category": "Quality AI",
+          "items": {
+            "item1": "Advanced AI that books appointments",
+            "item2": "Auto follow-up 24/7 — zero missed leads",
+            "item3": "Trained on your business + Multilingual"
+          }
+        },
+
+        "features3": {
+          "category": "Quality Ads",
+          "items": {
+            "item1": "30 Days Facebook + Google Ads Setup",
+            "item2": "10 Lead Target",
+            "item3": "Ad copy + targeting + management"
+          }
+        },
+        "features4": {
+          "category": "Quality Support",
+          "items": {
+            "item1": "Delivered in 14 Days",
+            "item2": "90 Days Support + Training",
+            "item3": "Domain + Hosting + SSL included"
+          }
+        }
+      },
+      "card3": {
+        "tier": "EMPIRE",
+        "badge": "👑 Elite",
+        "price": "₦2,500,000",
+        "tagline": "For industry leaders who want ENTERPRISE DOMINANCE.",
+        "result": "Become the #1 Enterprise Brand in your industry.",
+
+        "features": {
+          "category": "Enterprise Website + Systems",
+          "items": {
+            "item1": "Custom CRM + Inventory + Staff Portal",
+            "item2": "Advanced API Integration + Database Architecture",
+            "item3": "Enterprise Security + Cloud Hosting + Backup",
+            "item4": "Built to scale to 1M+ users"
+          }
+        },
+        "features2": {
+          "category": "Empire AI + Automation",
+          "items": {
+            "item1": "Advanced AI Chatbot trained on YOUR business",
+            "item2": "Auto booking, follow-up, support 24/7",
+            "item3": "Multilingual + Voice + WhatsApp Integration",
+            "item4": "Lead qualification + Sales automation"
+          }
+        },
+
+        "features3": {
+          "category": "Enterprise Marketing",
+          "items": {
+            "item1": "90 Days Facebook + Google Ads Management",
+            "item2": "50 Lead Target",
+            "item3": "SEO + Content Strategy + Email Automation",
+            "item4": "Full Analytics + Conversion Tracking"
+          }
+        },
+        "features4": {
+          "category": "Elite Support",
+          "items": {
+            "item1": "Delivered in 30 Days",
+            "item2": "1 Year Priority Support + Maintenance",
+            "item3": "Team Training + Dedicated Project Manager",
+            "item4": "Domain, Enterprise Hosting, SSL, Security included"
+          }
+        }
+      }
+    },
+    "comparison": {
+      "heading": "Not sure which one is for you?",
+
+      "table": {
+        "head1": "Feature",
+        "head2": "GROWTH",
+        "head3": "DOMINANCE",
+        "head4": "EMPIRE",
+        "button": "Still confused? Chat with us and we'll recommend the right one",
+
+        "rows": {
+          "row1": {
+            "feature": "Starting Price",
+            "growth": "₦650,000",
+            "dominance": "₦950,000",
+            "empire": "₦2,500,000"
+          },
+
+          "row2": {
+            "feature": "Website",
+            "growth": "Landing Page + Funnel",
+            "dominance": "Full Site + SEO + Blog",
+            "empire": "Enterprise + Custom Systems"
+          },
+
+          "row3": {
+            "feature": "AI / Automation",
+            "growth": "—",
+            "dominance": "AI Booking + Follow-up",
+            "empire": "AI + Voice + Sales Automation"
+          },
+
+          "row4": {
+            "feature": "Ads Management",
+            "growth": "14 Days",
+            "dominance": "30 Days",
+            "empire": "90 Days"
+          },
+
+          "row5": {
+            "feature": "Lead Target",
+            "growth": "5",
+            "dominance": "10",
+            "empire": "50"
+          },
+
+          "row6": {
+            "feature": "Delivery Time",
+            "growth": "10 Days",
+            "dominance": "14 Days",
+            "empire": "30 Days"
+          },
+
+          "row7": {
+            "feature": "Support",
+            "growth": "From Day 1",
+            "dominance": "90 Days",
+            "empire": "1 Year Priority"
+          },
+
+          "row8": {
+            "feature": "Best For",
+            "growth": "Businesses ready to grow",
+            "dominance": "Businesses ready to lead",
+            "empire": "Enterprise brands"
+          }
+        }
+      }
+    },
+
+    "faq": {
+      "heading": "Common Questions",
+      "questions": {
+        "q1": {
+          "q": "Do I pay monthly or one-time?",
+          "a": "One-time project fee. You pay 50% to begin and 50% on delivery. GROWTH includes an optional ₦50,000/month maintenance plan after launch if you want ongoing updates."
+        },
+        "q2": {
+          "q": "Is the 'Lead Target' guaranteed?",
+          "a": "We manage your ad spend, targeting, and creative specifically to work toward that number, and we keep optimizing until we've done everything possible to hit it. Results depend on your offer and market, so we're upfront that it's a target we work hard toward, not a promise independent of your business."
+        },
+        "q3": {
+          "q": "Can I upgrade from GROWTH to DOMINANCE or EMPIRE later?",
+          "a": "Yes — whatever you've already paid is credited toward the upgrade."
+        },
+        "q4": {
+          "q": "How fast can we start?",
+          "a": "Projects begin within 2-3 days of your 50% deposit."
+        },
+        "q5": {
+          "q": "What if I'm not happy with the result?",
+          "a": "We include revision rounds during the build itself, so you're reviewing and approving as we go — not surprised at the end."
+        }
+      }
+    },
+
+    "closing": {
+      "heading": "Ready to Own Your Market?",
+      "sub": "Stop paying for a website that just 'Looks nice'. Let's build a system that brings you customers.",
+      "btn1": " Book Your Free Audit",
+      "btn2": " 15 minutes. Zero pressure. We'll tell you exactly what to fix."
+    }
+  },
+
+  "privacy": {
+    "heading": "Privacy Policy",
+    "lastu": "Last Updated:",
+    "date": "August 31, 2026",
+    "c": "Company:",
+    "c1": " Lines Of Codes Technologies Limited — RC:9689529",
+    "introh": "1. Introduction",
+    "introb": " Lines Of Codes Technologies Limited ('we', 'us') respects your privacy.This policy explains how we collect, use, and protect your personal data when you interact with us via our website, WhatsApp Business API, or our AI assistant 'Ayo'.",
+    "datah": "2. Data Collection",
+    "datas": "We collect only data needed to serve you:",
+    "datab1": "Contact Data:",
+    "datab1a": "Name, phone number, email address,WhatsApp number",
+    "datab2": "Business Data:",
+    "datab2a": "Company name, website, industry,project requirements",
+    "datab3": "Technical Data:",
+    "datab3a": "IP address, device info, chat logs from WhatsApp/website",
+    "howh": "3. How We Use Your Data",
+    "hows": "We use your data to:",
+    "howb1": "Respond to inquiries and scope projects",
+    "howb2": "Deliver services: Website Development, AI Automation, Ads, Data & Cybersecurity",
+    "howb3": "Send invoices and payment links",
+    "howb4": "Improve our AI assistant 'Ayo' and customer experience",
+    "howb5": "Comply with legal obligations",
+    "dsh": "4. Data Storage & Security",
+    "dsb": " Each client's data is stored in an isolated ticket and workflow namespace. Data is never shared between clients. Sensitive information like API keys and passwords are collected only via secure one-time submission links, never in chat.",
+    "dsah": "5. Data Sharing",
+    "dsas": "We do not sell your data. We may share data with:",
+    "dsab1": "Meta/WhatsApp:",
+    "dsab1a": "As part of using WhatsApp Business API",
+    "dsab2": "Payment Processors:",
+    "dsab2a": "Paystack, Payoneer for billing",
+    "dsab3": "Our Specialists:",
+    "dsab3a": "Only on a need-to-know basis for your project",
+    "righth": "6. Your Rights",
+    "rightb": " Under NDPC law, you have the right to access, correct, or delete your data. To delete your data, see our ",
+    "rightl": "Data Deletion Instructions",
+    "datarh": "7. Data Retention",
+    "datarb": "We keep your data for the duration of our business relationship + 2years for legal/accounting purposes, unless you request deletion.",
+    "contacth": "8. Contact Us",
+    "contactb": "If you have questions about this policy, contact us: ",
+    "contacteH": "Email:",
+    "contacteL": "hello@lines-of-code.com.ng",
+    "contactwH": "Website:",
+    "contactwL": "www.lines-of-code.com.ng",
+    "contacta": "Address: Lagos, Nigeria"
+  },
+  "dataDeletion": {
+    "pageTitle": "Data Deletion | Lines of Code Technologies",
+    "heading": "Data Deletion Instructions",
+    "lastUpdatedLabel": "Last Updated:",
+    "lastUpdated": "August 26, 2026",
+    "companyLabel": "Company:",
+    "companyName": "Lines Of Codes Technologies Limited",
+    "requestHeading": "Request Deletion of Your Personal Data",
+    "requestIntro": "If you want us to delete the personal data we collected about you through our website, WhatsApp Business API, or Meta Conversions API, follow the steps below.",
+    "howHeading": "How to Request Deletion",
+    "sendBefore": "Send an email to",
+    "sendAfter": "with the subject line:",
+    "pleaseInclude": "Please include:",
+    "includeList": [
+      "Your phone number, email address, or WhatsApp number",
+      "The name of the business you interacted with",
+      "Any details that can help us locate your data in our system"
+    ],
+    "nextHeading": "What Happens Next",
+    "steps": [
+      {
+        "label": "Step 1:",
+        "text": "We will acknowledge your request within 5 business days"
+      },
+      {
+        "label": "Step 2:",
+        "text": "We will delete your data from systems under our control"
+      },
+      {
+        "label": "Step 3:",
+        "text": "We will send you a confirmation email within 14 business days"
+      }
+    ],
+    "notesHeading": "Important Notes",
+    "notes": [
+      "We act as a technical service provider for our clients. If you also gave data directly to a client, please contact that business to request deletion from their systems.",
+      "Data processed by Meta/WhatsApp is subject to Meta's own data policies.",
+      "We may retain certain data if required by law, such as financial records for tax purposes."
+    ],
+    "contactHeading": "Contact",
+    "emailLabel": "Email:",
+    "websiteLabel": "Website:",
+    "location": "Lagos, Nigeria"
+  },
+
+  "footer": {
+    "privacy": "Privacy Policy",
+    "dd": "Data Deletion",
+    "rights": "All rights reserved."
+  }
+}

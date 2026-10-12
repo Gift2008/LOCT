@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from "react";
 import "../styles/proofstrip.css";
 import useReveal from "./Hooks/useReveal";
+import { useLocale } from "../i18n/LocaleProvider";
 
 // Swap "value" for real numbers once you have them — count-up only
 // applies to numeric values; non-numeric ones (like "7-14") display as-is.
@@ -37,7 +38,7 @@ function useCountUp(target, active, duration = 1400) {
 function StatItem({ stat, delay }) {
   const [ref, visible] = useReveal(0.4);
   const count = useCountUp(stat.value, visible);
-
+  const { t } = useLocale();
   return (
     <div
       ref={ref}
@@ -47,7 +48,7 @@ function StatItem({ stat, delay }) {
       <span className="proof-value">
         {stat.value !== null ? `${count}${stat.suffix}` : stat.display}
       </span>
-      <span className="proof-label">{stat.label}</span>
+      <span className="proof-label">{t(`proof.${stat.label}`)}</span>
     </div>
   );
 }

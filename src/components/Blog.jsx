@@ -3,9 +3,12 @@ import { Link } from "react-router-dom";
 import "../styles/blog.css";
 import useReveal from "./Hooks/useReveal";
 import { posts } from "../data/blogposts";
+import { useLocale } from "../i18n/LocaleProvider";
 
 function BlogCard({ post, delay }) {
   const [ref, visible] = useReveal();
+  const { t } = useLocale();
+  const base = `blog.posts.${post.slug}`;
 
   return (
     <Link to={`/blog/${post.slug}`} className="blog-card-link">
@@ -14,17 +17,21 @@ function BlogCard({ post, delay }) {
         className={`blog-card ${visible ? "visible" : ""}`}
         style={{ transitionDelay: visible ? `${delay}s` : "0s" }}
       >
-        <img className="blog-card-image" src={post.image} alt={post.title} />
+        <img
+          className="blog-card-image"
+          src={post.image}
+          alt={t(`${base}.title`)}
+        />
         <div className="blog-card-content">
           <p className="blog-meta">
-            {post.date} · {post.readTime}
+            {t(`${base}.date`)} · {t(`${base}.readTime`)}
             {post.hypothetical && (
-              <span className="blog-tag">Illustrative example</span>
+              <span className="blog-tag">{t("blog.illustrative")}</span>
             )}
           </p>
-          <h3 className="blog-title">{post.title}</h3>
-          <p className="blog-excerpt">{post.excerpt}</p>
-          <span className="blog-toggle">Read more →</span>
+          <h3 className="blog-title">{t(`${base}.title`)}</h3>
+          <p className="blog-excerpt">{t(`${base}.excerpt`)}</p>
+          <span className="blog-toggle">{t("blog.readMore")}</span>
         </div>
       </article>
     </Link>
@@ -32,12 +39,12 @@ function BlogCard({ post, delay }) {
 }
 
 function Blog() {
+  const { t } = useLocale();
+
   return (
     <section id="blog" className="blog">
-      <p className="blog-eyebrow">RESOURCES</p>
-      <h2 className="blog-heading">
-        Straight talk on websites that actually work
-      </h2>
+      <p className="blog-eyebrow">{t("blog.eyebrow")}</p>
+      <h2 className="blog-heading">{t("blog.heading")}</h2>
 
       <div className="blog-grid">
         {posts.map((post, i) => (

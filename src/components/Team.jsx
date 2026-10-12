@@ -1,28 +1,29 @@
 import React from "react";
 import "../styles/team.css";
 import useReveal from "./Hooks/useReveal";
-import f1 from "../assets/am.png";
+import f1 from "../assets/loct.jpeg";
 import f2 from "../assets/g.jpg";
-
-const founder = {
-  name: "Austine Mbilitem",
-  role: "Founder",
-  initials: "AM",
-  image: f1,
-  bio: "Leads strategy and client relationships at Loct — makes sure every build actually solves the business problem behind the request, not just the surface ask. Started Loct after one too many conversations with business owners who'd been burned by agencies that disappeared after launch.",
-};
-
-const cofounder = {
-  name: "Gift Ifeanyi",
-  role: "Co-founder / Tech Lead",
-  initials: "GI",
-  image: f2,
-  bio: "Leads design and development — turns strategy into fast, functional, real websites. Obsessive about the details most people never notice: load times, mobile quirks, the small animations that make a site feel alive.",
-};
-
-const teamMembers = [founder, cofounder];
+import { useLocale } from "../i18n/LocaleProvider";
 
 function FounderRow({ person, imageSide, delay }) {
+  const { t } = useLocale();
+  const founder = {
+    name: t("team.founder.name"),
+    role: t("team.founder.role"),
+    initials: t("team.founder.initials"),
+    image: f1,
+    bio: t("team.founder.bio"),
+  };
+
+  const cofounder = {
+    name: t("team.coFounder.name"),
+    role: t("team.coFounder.role"),
+    initials: t("team.coFounder.initials"),
+    image: f2,
+    bio: t("team.coFounder.bio"),
+  };
+
+  const teamMembers = [founder, cofounder];
   const [ref, visible] = useReveal();
 
   return (
@@ -63,6 +64,24 @@ function FounderRow({ person, imageSide, delay }) {
 // }
 
 function Team() {
+  const { t } = useLocale();
+  const founder = {
+    name: t("team.founder.name"),
+    role: t("team.founder.role"),
+    initials: t("team.founder.initials"),
+    image: f1,
+    bio: t("team.founder.bio"),
+  };
+
+  const cofounder = {
+    name: t("team.coFounder.name"),
+    role: t("team.coFounder.role"),
+    initials: t("team.coFounder.initials"),
+    image: f2,
+    bio: t("team.coFounder.bio"),
+  };
+
+  const teamMembers = [founder, cofounder];
   return (
     <div className="team-page">
       <section className="founders-section">

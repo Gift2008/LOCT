@@ -2,29 +2,10 @@
 import React, { useState, useEffect } from "react";
 import "../styles/testimonials.css";
 import useReveal from "./Hooks/useReveal";
-
-const testimonials = [
-  {
-    quote:
-      "Loct took a vague idea and turned it into a site that actually feels like us. The whole process was smooth from the first call to launch.",
-    name: "Amara Okafor",
-    role: "Founder, Solene Skincare",
-  },
-  {
-    quote:
-      "Our old site was embarrassing. What they rebuilt loads fast, looks sharp, and customers actually compliment it now.",
-    name: "Daniel Reyes",
-    role: "Owner, Ridgeline Fitness",
-  },
-  {
-    quote:
-      "Working with Lines of Code Technologies was seamless. They took our vision and turned it into a modern, responsive website for Frankey Powa Technologies. Great communication, great design, great results. LOCT is the team to call when you need your business online the right way",
-    role: "CEO, Frankey Powa Technologies",
-    name: "Franklin Mbilitem",
-  },
-];
+import { useLocale } from "../i18n/LocaleProvider";
 
 function Testimonials() {
+  const { t } = useLocale();
   const [ref, visible] = useReveal();
   const [active, setActive] = useState(0);
 
@@ -34,13 +15,30 @@ function Testimonials() {
     }, 6000);
     return () => clearInterval(timer);
   }, []);
+  const testimonials = [
+    {
+      quote: t("testimonials.testimonial1.quote"),
+      name: t("testimonials.testimonial1.name"),
+      role: t("testimonials.testimonial1.role"),
+    },
+    {
+      quote: t("testimonials.testimonial2.quote"),
+      name: t("testimonials.testimonial2.name"),
+      role: t("testimonials.testimonial2.role"),
+    },
+    {
+      quote: t("testimonials.testimonial3.quote"),
+      name: t("testimonials.testimonial3.name"),
+      role: t("testimonials.testimonial3.role"),
+    },
+  ];
 
   return (
     <section id="testimonials" className="testimonials" ref={ref}>
       <p
         className={`testimonials-eyebrow reveal-fade ${visible ? "visible" : ""}`}
       >
-        WHAT CLIENTS SAY
+        {t("testimonials.heading")}
       </p>
 
       <div

@@ -2,34 +2,7 @@
 import React from "react";
 import "../styles/process.css";
 import useReveal from "./Hooks/useReveal";
-
-const steps = [
-  {
-    number: "01",
-    title: "Discover",
-    desc: "We start with a quick call to understand your business, goals, and what your current site is (or isn't) doing for you.",
-  },
-  {
-    number: "02",
-    title: "Design",
-    desc: "Custom Figma designs built around your brand — you review and approve every screen before a line of code is written.",
-  },
-  {
-    number: "03",
-    title: "Build",
-    desc: "Your approved design gets built into a fast, responsive, production-ready site.",
-  },
-  {
-    number: "04",
-    title: "Deploy",
-    desc: "We launch your site, connect your domain, and make sure everything runs smoothly in the real world.",
-  },
-  {
-    number: "05",
-    title: "Support",
-    desc: "Ongoing maintenance and updates so your site stays fast, secure, and current — long after launch.",
-  },
-];
+import { useLocale } from "../i18n/LocaleProvider";
 
 function ProcessStep({ number, title, desc, delay, isLast }) {
   const [ref, visible] = useReveal(0.3);
@@ -54,10 +27,34 @@ function ProcessStep({ number, title, desc, delay, isLast }) {
 }
 
 function Process() {
+  const { t } = useLocale();
+
+  const steps = [
+    {
+      number: "01",
+      title: t("steps.step1.title"),
+      desc: t("steps.step1.description"),
+    },
+    {
+      number: "02",
+      title: t("steps.step2.title"),
+      desc: t("steps.step2.description"),
+    },
+    {
+      number: "03",
+      title: t("steps.step3.title"),
+      desc: t("steps.step3.description"),
+    },
+    {
+      number: "04",
+      title: t("steps.step4.title"),
+      desc: t("steps.step4.description"),
+    },
+  ];
   return (
     <section id="process" className="process">
-      <p className="process-eyebrow">HOW WE WORK</p>
-      <h2 className="process-heading">From idea to live site</h2>
+      <p className="process-eyebrow">{t("process.eyebrow")}</p>
+      <h2 className="process-heading">{t("process.heading")}</h2>
 
       <div className="process-list">
         {steps.map((s, i) => (

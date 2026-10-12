@@ -1,12 +1,12 @@
 /* The container */
 .nav-container {
+  box-sizing: border-box;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  padding: 10px;
+  padding: 10px 32px;
   height: 70px;
   background-color: var(--bg);
-  /* color: var(--dark-bg); */
   width: 100%;
   position: fixed;
   z-index: 99;
@@ -16,13 +16,16 @@
 }
 
 /* logo */
+.logo {
+  flex-shrink: 0;
+}
 .logo a {
   cursor: pointer;
   text-decoration: none;
   font-weight: 700;
   font-size: 22px;
+  white-space: nowrap;
 }
-
 .logo a p .l {
   color: var(--dark-bg);
 }
@@ -34,43 +37,46 @@
   font-size: small;
   color: grey;
 }
-/* The links */
+
+/* The links: now a proper flex row */
+.navigation {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
 .navigation a {
   font-family: "Poppins";
-  font-size: 15px;
+  font-size: 14px;
   text-decoration: none;
-  margin-right: 16px;
+  white-space: nowrap;
   color: var(--dark-bg);
-  transition: 1s;
+  transition: color 0.3s ease;
 }
 .navigation a:hover {
-  color: var(--dark-bg);
-  transition: 1s;
-  font-size: large;
+  color: var(--accent);
 }
 
 /* The button */
 .btn {
   background-color: var(--accent) !important;
   border: 1px solid var(--accent) !important;
-  font-size: 15px !important;
-  margin-left: 20px;
-  transition-property: background-color;
-  transition: 0.6s !important;
+  font-size: 14px !important;
+  white-space: nowrap;
+  transition: transform 0.6s ease !important;
 }
 .btn:hover {
-  transform: scale(1.1) !important;
-  transition: 0.6s !important;
+  transform: scale(1.06) !important;
   background-color: var(--accent) !important;
 }
+
+/* Services dropdown */
 .nav-dropdown {
   position: relative;
 }
-
 .nav-dropdown-trigger {
   font-family: "Poppins";
-  font-size: 15px;
-  color: var(--border);
+  font-size: 14px;
+  color: var(--dark-bg);
   background: none;
   border: none;
   cursor: pointer;
@@ -78,18 +84,19 @@
   align-items: center;
   gap: 4px;
   padding: 0;
-  margin-right: 10px;
+  white-space: nowrap;
+  transition: color 0.3s ease;
 }
-
+.nav-dropdown-trigger:hover {
+  color: var(--accent);
+}
 .chevron {
   font-size: 11px;
   transition: transform 0.3s ease;
 }
-
 .chevron.open {
   transform: rotate(180deg);
 }
-
 .dropdown-panel {
   position: absolute;
   top: calc(100% + 14px);
@@ -108,13 +115,11 @@
     visibility 0.3s;
   z-index: 30;
 }
-
 .dropdown-panel.open {
   opacity: 1;
   visibility: visible;
   transform: translateY(0);
 }
-
 .dropdown-item {
   display: block;
   padding: 10px 12px;
@@ -126,41 +131,12 @@
     background-color 0.2s ease,
     color 0.2s ease;
 }
-
 .dropdown-item:hover {
   background-color: rgba(255, 255, 255, 0.08);
   color: var(--accent) !important;
 }
 
-@media (max-width: 768px) {
-  .dropdown-panel {
-    position: static;
-    opacity: 1;
-    visibility: visible;
-    transform: none;
-    max-height: 0;
-    overflow: hidden;
-    padding: 0;
-    border: none;
-    background: transparent;
-    transition:
-      max-height 0.4s ease,
-      padding 0.4s ease;
-  }
-
-  .dropdown-panel.mobile-open {
-    max-height: 300px;
-    padding: 8px 0 8px 16px;
-  }
-
-  .nav-dropdown-trigger {
-    color: #fff;
-    width: 100%;
-    justify-content: space-between;
-  }
-}
-
-/* Hamburger button — hidden by default (desktop) */
+/* Hamburger button: hidden on desktop */
 .menu-toggle {
   display: none;
   flex-direction: column;
@@ -190,10 +166,9 @@
   transform: translateY(-7px) rotate(-45deg);
 }
 
-/* ===== Media query ===== */
-@media (max-width: 768px) {
+/* ===== Hamburger layout (was 768px; raised so the full bar never overflows) ===== */
+@media (max-width: 1280px) {
   .nav-container {
-    justify-content: space-between;
     padding: 10px 20px;
   }
 
@@ -206,10 +181,11 @@
     top: 70px;
     left: 0;
     width: 100%;
+    box-sizing: border-box;
     background-color: var(--dark-bg);
     flex-direction: column;
     align-items: flex-start;
-    gap: 18px;
+    gap: 0;
     padding: 0 24px;
     max-height: 0;
     overflow: hidden;
@@ -221,20 +197,51 @@
   }
 
   .navigation.open {
-    max-height: 400px;
+    max-height: calc(100vh - 70px);
+    overflow-y: auto;
     opacity: 1;
     padding: 20px 24px;
     z-index: 99;
   }
 
   .navigation a {
-    margin-right: 0;
     display: block;
     margin: 15px;
     color: var(--bg);
+    font-size: 15px;
   }
 
   .btn {
     margin-left: 0 !important;
+  }
+
+  /* dropdown becomes an inline expand inside the mobile menu */
+  .nav-dropdown {
+    width: 100%;
+  }
+  .nav-dropdown-trigger {
+    color: #fff;
+    width: 100%;
+    justify-content: space-between;
+    margin: 15px 0;
+    font-size: 15px;
+  }
+  .dropdown-panel {
+    position: static;
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+    max-height: 0;
+    overflow: hidden;
+    padding: 0;
+    border: none;
+    background: transparent;
+    transition:
+      max-height 0.4s ease,
+      padding 0.4s ease;
+  }
+  .dropdown-panel.mobile-open {
+    max-height: 400px;
+    padding: 8px 0 8px 16px;
   }
 }

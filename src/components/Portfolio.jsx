@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 import project1 from "../assets/BOW.png";
 import project2 from "../assets/powa.jpeg";
 import project3 from "../assets/vic.jpeg";
+import { useLocale } from "../i18n/LocaleProvider";
 const projects = [
   {
     title: "Beauty On Wheels",
@@ -55,26 +56,15 @@ function ProjectCard({ image, title, category, color, link, delay }) {
 
 function Portfolio() {
   const [active, setActive] = useState("All");
+  const { t } = useLocale();
 
   const filtered =
     active === "All" ? projects : projects.filter((p) => p.category === active);
 
   return (
     <section id="portfolio" className="portfolio">
-      <p className="portfolio-eyebrow">OUR WORK</p>
-      <h2 className="portfolio-heading">Sites we've brought to life</h2>
-
-      {/* <div className="portfolio-filters">
-        {filters.map((f) => (
-          <button
-            key={f}
-            className={`filter-btn ${active === f ? "active" : ""}`}
-            onClick={() => setActive(f)}
-          >
-            {f}
-          </button>
-        ))}
-      </div> */}
+      <p className="portfolio-eyebrow">{t("portfolio.eyebrow")}</p>
+      <h2 className="portfolio-heading">{t("portfolio.heading")}</h2>
 
       <div className="portfolio-grid">
         {filtered.map((p, i) => (

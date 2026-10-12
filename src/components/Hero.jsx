@@ -1,8 +1,9 @@
-import React from "react";
 import hero from "../assets/hr.png";
 import "../styles/hero.css";
+import { useLocale } from "../i18n/LocaleProvider";
 
 function Hero() {
+  const { t } = useLocale();
   return (
     <div className="hero-image">
       <div className="hro">
@@ -13,27 +14,24 @@ function Hero() {
             className="headline reveal-drop"
             style={{ animationDelay: "0.1s" }}
           >
-            Got an Idea?
+            {t("hero.headline")}
           </p>
-          <b style={{ color: "var(--accent)" }}>You imagine it. We code it.</b>
+          <b style={{ color: "var(--accent)" }}>{t("hero.firstsubheadline")}</b>
           <p className="subhead reveal-drop" style={{ animationDelay: "0.3s" }}>
-            <span>Websites and AI Systems that actually do the work.</span>
+            <span>{t("hero.secondsubhead")}</span>
             <br />
             <br />
-            <span>
-              Lines of Code Technologies builds high-performance websites and
-              practical AI tools that help growing businesses scale.
-            </span>
+            <span>{t("hero.subhead")}</span>
           </p>
           <div className="s reveal-drop" style={{ animationDelay: "0.5s" }}>
             <a
               href="https://calendly.com/hello-lines-of-code/15min"
               className="cta-btn"
             >
-              Start your project today
+              {t("hero.ctaPrimary")}
             </a>
             <a href="#portfolio" className="cta-text">
-              See our work →
+              {t("hero.ctaSecondary")}
             </a>
           </div>
         </div>
