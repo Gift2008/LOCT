@@ -1,8 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import { useLocale } from "../i18n/LocaleProvider";
 import { enabledLocales, getLocaleConfig } from "../i18n/locales";
-import "../styles/languageswitcher.css";
-
+import "../styles/languageswitch.css";
 function LanguageSwitcher({ onSelect }) {
   const { locale, setLocale } = useLocale();
   const [open, setOpen] = useState(false);
