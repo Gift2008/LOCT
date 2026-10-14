@@ -1,8 +1,8 @@
 import React from "react";
 import "../styles/team.css";
 import useReveal from "./Hooks/useReveal";
-import f1 from "../assets/loct.jpeg";
 import f2 from "../assets/g.jpg";
+import f3 from "../assets/uu.jpg";
 import { useLocale } from "../i18n/LocaleProvider";
 
 function FounderRow({ person, imageSide, delay }) {
@@ -11,7 +11,7 @@ function FounderRow({ person, imageSide, delay }) {
     name: t("team.founder.name"),
     role: t("team.founder.role"),
     initials: t("team.founder.initials"),
-    image: f1,
+    image: f3,
     bio: t("team.founder.bio"),
   };
 
@@ -69,7 +69,7 @@ function Team() {
     name: t("team.founder.name"),
     role: t("team.founder.role"),
     initials: t("team.founder.initials"),
-    image: f1,
+    image: f3,
     bio: t("team.founder.bio"),
   };
 
