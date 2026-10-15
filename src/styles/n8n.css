@@ -8,3 +8,12 @@
 .chat-window-toggle svg {
   display: none !important;
 }
+
+@media (max-width: 768px) {
+  #n8n-chat,
+  .n8n-chat,
+  .chat-window-toggle {
+    margin-top: -150px !important;
+    right: 30px;
+  }
+}
