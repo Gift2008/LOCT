@@ -8,7 +8,7 @@
     "about": "About Us",
     "blog": "Blog",
     "pricing": "Pricing",
-    "cta": "Book Your Free Call",
+    "cta": "Chat with Ayo",
     "fields": { "webDesign": "Web Design" }
   },
   "hero": {
@@ -16,7 +16,7 @@
     "firstsubheadline": "You imagine it. We code it.",
     "secondsubhead": "Websites and AI Systems that actually do the work.",
     "subhead": " Lines of Code Technologies builds high-performance websites and practical AI tools that help growing businesses scale.",
-    "ctaPrimary": "Start your project today",
+    "ctaPrimary": "Chat with Ayo",
     "ctaSecondary": "See our work →"
   },
   "proof": {
